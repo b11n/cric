@@ -1,20 +1,22 @@
-import {matches} from './matches.js';
+
 import {teams} from './teams.js';
 
+import fs from 'fs';
+   
+function readTeam(id) {
+    const data = fs.readFileSync(`./squad/${id}.json`);
+    return JSON.parse(data);
+}
 
-let newMatches = matches.map((match)=>{
-    const {away, home} = match;
-    const awayCode = teams.find((team)=>{
-        return team.name === away;
-    }).id;
+const allPlayers = [];
 
-    const homeCode = teams.find((team)=>{
-        return team.name === home;
-    }).id;
+teams.map((team)=>{
+    const players = readTeam(team.id);
 
-    return {...match, awayCode, homeCode}
+    players.map(player=>{
+        allPlayers.push( {...player, name: player.name.trim(), team: team.id});
+    });
 
-});
+})
 
-console.log(newMatches)
-
+console.log(JSON.stringify(allPlayers));

@@ -52,10 +52,6 @@
             <i class="icon-list-bullet"></i>
             <span>Matches</span>
         </a>
-        <a href="/predictions">
-            <i class="icon-magic"></i>
-            <span>Predictions</span>
-        </a>
         <a href="/leaderboard">
             <i class="icon-award"></i>
             <span>Leaders</span>

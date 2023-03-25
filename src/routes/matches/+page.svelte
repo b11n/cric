@@ -23,6 +23,7 @@
             {i+1}
             <div>{match.date}</div>
             <div>{match.home} vs {match.away}</div>
+            <div>{match.time}</div>
         </a>
         <p></p>
     {/each}
