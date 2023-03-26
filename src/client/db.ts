@@ -21,10 +21,13 @@ export const initDatabase = function () {
     async function getLatestPrediction(uid: string, matchId: number) {
 
         
-        const q = query(collection(db,"predictions", "list", uid), where('matchId', '==', matchId), orderBy('timestamp') );
+        const q = query(collection(db,"predictions", "list", uid), where('matchId', '==', matchId) );
         const querySnapshot = await getDocs(q);
-        if(querySnapshot.docs[querySnapshot.docs.length - 1]){
-            return querySnapshot.docs[querySnapshot.docs.length - 1].data();
+        const result = querySnapshot.docs.map((doc)=>doc.data()).sort((a,b)=>{
+            return a.timestamp.seconds - b.timestamp.seconds;
+        })
+        if(result){
+            return result[result.length - 1];
         }else {
             return {manOfMatch: '', team: 'none'}
         }
