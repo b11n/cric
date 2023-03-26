@@ -8,7 +8,7 @@
     import Menu from '@smui/menu';
     import List, { Item, Text } from '@smui/list';
     import IconButton from '@smui/icon-button';
-
+      
     let menu: Menu;
 
     let hasUser = false;
@@ -45,7 +45,7 @@
 
     });
 
-    let prominent = false;
+  let prominent = false;
   let dense = false;
   let secondaryColor = false;
 
@@ -88,18 +88,6 @@
         text-transform: uppercase;
         font-size: 10px;
         color: rgb(79, 79, 79);
-    }
-
-    .avatar {
-        height: 40px;
-    width: 40px;
-    align-items: center;
-    display: flex;
-    font-family: sans-serif;
-    border-radius: 50%;
-    background: #9685ff;
-    justify-content: center;
-    font-size: 22px;
     }
 
     .top-app-bar-container {

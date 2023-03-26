@@ -7,14 +7,41 @@
     import FormField from '@smui/form-field';
     import Autocomplete from '@smui-extra/autocomplete';
     import Button, { Label } from '@smui/button';
+    import {initDatabase} from '../../../client/db'
+    import { onMount } from 'svelte';
+    import { auth as authStore} from '../../../store/auth';
 
 	const match = matches[parseInt($page.params.id)];
 	const selectedPlayers = players.filter((player) => {
 		return player.team === match.homeCode || player.team === match.awayCode;
 	}).map(player=>player.name);
 
+
+    let saveSelection = ()=>{};
+
+
+
+
     let selectedTeam = 'none';
     let momSelected = ''
+
+    onMount(()=>{
+        const {addPrediction,getLatestPrediction } = initDatabase();
+        saveSelection =  () => {
+            authStore.subscribe((user)=>{
+                addPrediction(user?.uid || '', selectedTeam, momSelected || '');
+            });
+            
+        }
+
+        authStore.subscribe(async (user)=>{
+            const prediction = await getLatestPrediction(user?.uid || '');
+            selectedTeam = prediction.team;
+            momSelected = prediction.manOfMatch;
+        });
+
+       
+    })
 </script>
 
 <div class="wrap">
@@ -76,7 +103,7 @@
 
 		<br />
 
-        <Button variant="raised">
+        <Button variant="raised"  on:click={saveSelection} >
             <Label>Save selection</Label>
         </Button>
 	</div>
