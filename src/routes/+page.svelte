@@ -6,12 +6,17 @@
     }
 </style>
 
-<script>
+<script lang="ts">
+      import { auth } from "../store/auth";
+
 
 </script>
 
 <div class="heading">
-    Welcome Manu
+    {#if $auth}
+        Welcome {$auth.userName}
+    {/if}
+    
 </div>
 
 <div class="heading">

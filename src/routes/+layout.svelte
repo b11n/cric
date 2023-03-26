@@ -1,3 +1,44 @@
+
+<script lang="ts">
+    import { onMount } from 'svelte';
+    import { initFirebase } from '../client/firebase';
+    import { auth as authStore} from '../store/auth';
+
+
+    let hasUser = false;
+    let userName = "";
+
+    let login = ()=>{
+        console.log("T")
+    };
+
+    let signout = () => {
+        
+    }
+  
+    onMount(()=>{
+        const {auth,onAuthStateChanged, signIn,signOutFromApp} = initFirebase();  
+        login = signIn();
+        signout = signOutFromApp();
+        onAuthStateChanged(auth, (data:any)=>{
+           if(data && data.email && data.uid) {
+            authStore.set({
+                userName: data.displayName,
+                uid: data.uid,
+                email: data.email
+            })
+            hasUser = true;
+           }else {
+            hasUser = false;
+           }
+        })
+
+
+    });
+
+
+</script>
+
 <style>
     @import url('/static/fonts/icons/css/fontello.css');
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
@@ -41,7 +82,13 @@
     }
 </style>
 
-<slot></slot>
+{#if !hasUser}
+    <button on:click={login} > Login with Google</button>
+{:else}
+    <button on:click={signout}>Sign out</button>
+    <slot></slot>   
+{/if}
+
 <footer>
    <nav>
         <a href="/">
