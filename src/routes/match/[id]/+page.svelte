@@ -11,7 +11,8 @@
     import { onMount } from 'svelte';
     import { auth as authStore} from '../../../store/auth';
 
-	const match = matches[parseInt($page.params.id)];
+    const matchId = parseInt($page.params.id);
+	const match = matches[matchId];
 	const selectedPlayers = players.filter((player) => {
 		return player.team === match.homeCode || player.team === match.awayCode;
 	}).map(player=>player.name);
@@ -23,21 +24,27 @@
 
 
     let selectedTeam = 'none';
-    let momSelected = ''
+    let momSelected = '';
+    let lastUpdated:number|null = null;
 
     onMount(()=>{
         const {addPrediction,getLatestPrediction } = initDatabase();
         saveSelection =  () => {
             authStore.subscribe((user)=>{
-                addPrediction(user?.uid || '', selectedTeam, momSelected || '');
+                addPrediction(user?.uid || '', selectedTeam, momSelected || '',matchId );
+                lastUpdated = new Date().getTime();
             });
             
         }
 
         authStore.subscribe(async (user)=>{
-            const prediction = await getLatestPrediction(user?.uid || '');
+            const prediction = await getLatestPrediction(user?.uid || '', matchId);
             selectedTeam = prediction.team;
             momSelected = prediction.manOfMatch;
+            if(prediction.timestamp) {
+                console.log(prediction)
+                lastUpdated = prediction.timestamp.seconds*1000;
+            }
         });
 
        
@@ -98,14 +105,26 @@
               label="Man of the match"
             />
             <br />
-            Selected: {momSelected || 'No Selection'}
+            <div class="selected">
+                Selected: {momSelected || 'No Selection'}
+            </div>
         </div>
 
 		<br />
 
-        <Button variant="raised"  on:click={saveSelection} >
-            <Label>Save selection</Label>
-        </Button>
+        <div class="bottom">
+            <div class="lastupdaed-wrapper">
+                {#if lastUpdated}
+                    <div class="lastupdated">Updated: {new Date(lastUpdated).toLocaleString()}</div>
+                {/if}
+            </div>
+
+            <Button variant="raised"  on:click={saveSelection} >
+                <Label>Save selection</Label>
+            </Button>
+
+        </div>
+
 	</div>
 </div>
 
@@ -124,5 +143,18 @@
 
     .autocomplete {
         width: 100%;
+    }
+
+    .lastupdated,
+    .selected {
+        font-family: Roboto;
+        font-size: 14px;
+        color: rgba(0,0,0,.87);
+        margin-top: 8px;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
     }
 </style>
