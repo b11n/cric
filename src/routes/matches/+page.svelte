@@ -1,5 +1,6 @@
 <script>
     import {matches} from '../../../data/matches'
+	import Match from '../../components/match.svelte';
 
     
 </script>
@@ -7,11 +8,19 @@
 <style>
     .match-list{
         font-family: 'Noto Sans', sans-serif;
+        overflow: scroll;
+        height: calc(100vh - 120px);
     }
 
     .heading {
         font-family: 'Noto Sans', sans-serif;
         font-size: 24px;
+    }
+
+    a {
+        text-decoration: none;
+        margin: 12px;
+        display: block;
     }
 </style>
 
@@ -20,11 +29,7 @@
 <div class="match-list">
     {#each matches as match, i}
         <a href="/match/{i}">
-            {i+1}
-            <div>{match.date}</div>
-            <div>{match.home} vs {match.away}</div>
-            <div>{match.time}</div>
+            <Match {match} index={i} condensed={true}/>
         </a>
-        <p></p>
     {/each}
 </div>

@@ -4,6 +4,12 @@
     import { initFirebase } from '../client/firebase';
     import { auth as authStore} from '../store/auth';
 
+    import TopAppBar, { Row, Section, Title } from '@smui/top-app-bar';
+    import Menu from '@smui/menu';
+    import List, { Item, Text } from '@smui/list';
+    import IconButton from '@smui/icon-button';
+
+    let menu: Menu;
 
     let hasUser = false;
     let userName = "";
@@ -22,13 +28,16 @@
         signout = signOutFromApp();
         onAuthStateChanged(auth, (data:any)=>{
            if(data && data.email && data.uid) {
+            console.log(data)
             authStore.set({
                 userName: data.displayName,
                 uid: data.uid,
-                email: data.email
+                email: data.email,
+                photo: data.photoURL,
             })
             hasUser = true;
            }else {
+            authStore.set({});
             hasUser = false;
            }
         })
@@ -36,12 +45,17 @@
 
     });
 
+    let prominent = false;
+  let dense = false;
+  let secondaryColor = false;
+
 
 </script>
 
 <style>
     @import url('/static/fonts/icons/css/fontello.css');
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Sofia+Sans+Extra+Condensed&display=swap');
 
     footer{
         position: fixed;
@@ -76,16 +90,60 @@
         color: rgb(79, 79, 79);
     }
 
-    .heading {
-        font-family: 'Noto Sans', sans-serif;
-        font-size: 24px;
+    .avatar {
+        height: 40px;
+    width: 40px;
+    align-items: center;
+    display: flex;
+    font-family: sans-serif;
+    border-radius: 50%;
+    background: #9685ff;
+    justify-content: center;
+    font-size: 22px;
     }
+
+    .top-app-bar-container {
+        width: 100%;
+        overflow: hidden;
+  }
 </style>
+
+
+<div class="top-app-bar-container">
+    <TopAppBar
+      variant="static"
+      {prominent}
+      {dense}
+      color={secondaryColor ? 'secondary' : 'primary'}
+    >
+      <Row>
+        <Section>
+          <Title>GuessPL</Title>
+        </Section>
+        <Section align="end" toolbar>
+            {#if $authStore?.userName}
+            <IconButton class="material-icons"  on:click={() => menu.setOpen(true)}
+                >account_circle</IconButton
+              >
+              <Menu bind:this={menu}>
+                <List>
+                  <Item on:SMUI:action={() => {signout()} }>
+                    <Text>Logout</Text>
+                  </Item>
+                </List>
+              </Menu>
+            {/if}
+         
+        </Section>
+      </Row>
+    </TopAppBar>
+
+
+</div>
 
 {#if !hasUser}
     <button on:click={login} > Login with Google</button>
 {:else}
-    <button on:click={signout}>Sign out</button>
     <slot></slot>   
 {/if}
 
