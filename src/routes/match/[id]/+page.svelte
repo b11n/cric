@@ -139,6 +139,7 @@
 
     .wrap {
         padding: 16px;
+        margin-bottom: 50px;
     }
 
     .autocomplete {
