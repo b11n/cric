@@ -1,8 +1,11 @@
 // Import the functions you need from the SDKs you need
-import { memoize } from 'lodash';
+import lodash from 'lodash';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth, onAuthStateChanged, signInWithPopup, GoogleAuthProvider,signOut } from 'firebase/auth';
+
+const { memoize } = lodash;
+
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
