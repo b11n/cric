@@ -19,6 +19,7 @@
 		"@smui/button": "^7.0.0-beta.0",
 		"@smui/form-field": "^7.0.0-beta.0",
 		"@smui/icon-button": "^7.0.0-beta.0",
+		"@smui/linear-progress": "^7.0.0-beta.0",
 		"@smui/menu": "^7.0.0-beta.0",
 		"@smui/radio": "^7.0.0-beta.0",
 		"@smui/top-app-bar": "^7.0.0-beta.0",

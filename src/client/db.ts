@@ -7,15 +7,38 @@ export const initDatabase = function () {
     const { app } = initFirebase();
     const db = getFirestore(app);
 
+
+    async function checkAndAddUser(userId: string, userName:string, email:string) {
+        const q = query(collection(db,"users"), where('userId', '==', userId) );
+        const querySnapshot = await getDocs(q);
+       if(querySnapshot.docs.length == 0){
+        const docRef = await addDoc(collection(db, "/users"), {
+            userId,
+            userName,
+            email,
+            timestamp: serverTimestamp()
+        });
+        return docRef;
+       }
+
+    }
+
+    async function getUserList() {
+        const q = query(collection(db,"users") );
+        const querySnapshot = await getDocs(q);
+        const result = querySnapshot.docs.map((doc)=>doc.data());
+        return result;
+
+    }
+
     async function addPrediction(uid: string, team: string, manOfMatch: string, matchId: number) {
-        console.log(uid)
         const docRef = await addDoc(collection(db, "/predictions/list/" + uid), {
             team,
             manOfMatch,
             matchId,
             timestamp: serverTimestamp()
         });
-        console.log("Document written with ID: ", docRef.id);
+        return docRef;
     }
 
     async function getLatestPrediction(uid: string, matchId: number) {
@@ -26,7 +49,7 @@ export const initDatabase = function () {
         const result = querySnapshot.docs.map((doc)=>doc.data()).sort((a,b)=>{
             return a.timestamp.seconds - b.timestamp.seconds;
         })
-        if(result){
+        if(result.length > 0){
             return result[result.length - 1];
         }else {
             return {manOfMatch: '', team: 'none'}
@@ -37,5 +60,5 @@ export const initDatabase = function () {
 
     }
 
-    return { db, addPrediction, getLatestPrediction };
+    return { db, addPrediction, getLatestPrediction,checkAndAddUser,getUserList };
 }

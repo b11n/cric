@@ -9,6 +9,7 @@
 	import Menu from '@smui/menu';
 	import List, { Item, Text } from '@smui/list';
 	import IconButton from '@smui/icon-button';
+	import { initDatabase } from '../client/db';
 
 	let menu: Menu;
 
@@ -23,11 +24,14 @@
 
 	onMount(() => {
 		const { auth, onAuthStateChanged, signIn, signOutFromApp } = initFirebase();
+        const {checkAndAddUser} = initDatabase();
 		login = signIn();
 		signout = signOutFromApp();
 		onAuthStateChanged(auth, (data: any) => {
 			if (data && data.email && data.uid) {
-				console.log(data);
+
+                checkAndAddUser(data.uid,data.displayName, data.email);
+                
 				authStore.set({
 					userName: data.displayName,
 					uid: data.uid,
@@ -161,10 +165,5 @@
         display: flex;
     align-items: center;
     justify-content: center;
-    }
-
-    Button {
-        color: #3d3d3d;
-        background: white;
     }
 </style>
