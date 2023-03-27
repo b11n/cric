@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Timer from './timer.svelte'
 	interface Match {
 		date: string;
 		home: string;
@@ -14,7 +15,7 @@
 </script>
 
 <div class="match" class:condensed={condensed === true}>
-	<div class="date">{match.date} {match.time}</div>
+	<div class="date"><div>{match.date} {match.time}  </div>  <Timer ts={new Date(match.date + " " +match.time)}></Timer></div> 
 	<div class="teams">
 		<div class="home" class:selected={selected === match.homeCode}>
 			<img src="https://scores.iplt20.com/ipl/teamlogos/{match.homeCode}.png?v=2" alt="" />
@@ -39,7 +40,9 @@
 
 	.date {
 		font-size: 20px;
-		margin-left: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
 	}
 
 	.teams {
@@ -54,6 +57,7 @@
 
 	.match.condensed img {
 		width: 50px;
+        height: 50px;
 	}
 
 	.selected {
@@ -68,13 +72,14 @@
 		align-items: center;
 		padding: 8px;
 		border-radius: 8px;
+        width: 132px;
 	}
 
 	.team-name {
-		font-size: 24px;
+		font-size: 18px;
 		text-transform: uppercase;
-		font-style: italic;
 		text-align: center;
-		max-width: 100px;
+        max-width: 128px;
+        height: 20px;
 	}
 </style>

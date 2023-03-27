@@ -4,7 +4,7 @@
 	import Autocomplete from '@smui-extra/autocomplete';
 	import Button, { Label } from '@smui/button';
 	import LinearProgress from '@smui/linear-progress';
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import { page } from '$app/stores';
 
 	import { matches } from '../../../../data/matches';
@@ -12,6 +12,7 @@
 	import Match from '../../../components/match.svelte';
 	import { initDatabase } from '../../../client/db';
 	import { auth as authStore } from '../../../store/auth';
+    import dayjs from 'dayjs'
 
 	const matchId = parseInt($page.params.id);
 	const match = matches[matchId];
@@ -27,6 +28,15 @@
 	let momSelected = '';
 	let lastUpdated: number | null = null;
     let isLoading = false;
+    let interval = -1;
+    let disabled = false;
+    let warning = '';
+
+    function getDiff(time1:number, time2:number) {
+        const date1 = dayjs(time1);
+        const date2 = dayjs(time2);
+        return date2.diff(date1, 'second');
+    }
 
 	onMount(() => {
 		const { addPrediction, getLatestPrediction } = initDatabase();
@@ -50,7 +60,33 @@
 				lastUpdated = prediction.timestamp.seconds * 1000;
 			}
 		});
+
+
+        let diff = getDiff(new Date().getTime(), new Date(`${match.date} ${match.time}`).getTime())
+        if(diff > 0) {
+            interval = window.setInterval(()=>{
+                diff = getDiff(new Date().getTime(), new Date(`${match.date} ${match.time}`).getTime())
+                if(diff < 0) {
+                    clearInterval(interval);
+                    disabled = true;
+                }else {
+                    if(diff > 60) {
+                        warning = `Closes in ${Math.trunc(diff/60)} minutes`;
+                    }else{
+                        warning = `Closes in ${diff} seconds`;
+                    }
+                }
+            },1000);
+        }else {
+            disabled = true;
+        }
+
+
 	});
+
+    onDestroy(()=>{
+        clearInterval(interval);
+    })
 </script>
 
 <div class="wrap">
@@ -65,20 +101,24 @@
         </div>
 
 		<div class="matchcontent">
-			YOUR BETS
+            <div class="heading">
+                <div class="title">YOUR BETS</div>
+                <div class="last-updated"></div>
+            </div>
+            {warning}
 
 			<br /><br />
 
 			<div>Winner</div>
 
 			<FormField>
-				<Radio bind:group={selectedTeam} value={'none'} />
+				<Radio bind:group={selectedTeam} value={'none'}   {disabled}/>
 				<span slot="label"> No Selection </span>
 			</FormField>
 			<br />
 
 			<FormField>
-				<Radio bind:group={selectedTeam} value={match.homeCode} />
+				<Radio bind:group={selectedTeam} value={match.homeCode}   {disabled} />
 				<span slot="label">
 					{match.home}
 				</span>
@@ -86,7 +126,7 @@
 			<br />
 
 			<FormField>
-				<Radio bind:group={selectedTeam} value={match.awayCode} />
+				<Radio bind:group={selectedTeam} value={match.awayCode}  {disabled} />
 				<span slot="label">
 					{match.away}
 				</span>
@@ -96,16 +136,13 @@
 			<div>Man of the Match</div>
 			<br />
 			<div class="autocomplete">
-				<Autocomplete
+				<Autocomplete  {disabled}
 					options={selectedPlayers}
 					textfield$variant="outlined"
 					bind:value={momSelected}
 					label="Man of the match"
 				/>
 				<br />
-				<div class="selected">
-					Selected: {momSelected || 'No Selection'}
-				</div>
 			</div>
 
 			<br />
@@ -117,7 +154,7 @@
 					{/if}
 				</div>
 
-				<Button variant="raised" on:click={saveSelection}>
+				<Button variant="raised" on:click={saveSelection} {disabled}>
 					<Label>Save selection</Label>
 				</Button>
 			</div>
