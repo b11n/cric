@@ -12,6 +12,7 @@
 	import Match from '../../../components/match.svelte';
 	import { initDatabase } from '../../../client/db';
 	import { auth as authStore } from '../../../store/auth';
+    import Select from '../../../components/select.svelte';
     import dayjs from 'dayjs'
 
 	const matchId = parseInt($page.params.id);
@@ -21,6 +22,7 @@
 			return player.team === match.homeCode || player.team === match.awayCode;
 		})
 		.map((player) => player.name);
+        selectedPlayers.push('No Selection')
 
 	let saveSelection = () => {};
 
@@ -42,6 +44,7 @@
 		const { addPrediction, getLatestPrediction } = initDatabase();
 		saveSelection = () => {
             isLoading = true;
+            const manOfMatch = momSelected === 'No Selection' ? '' : momSelected;
 			authStore.subscribe(async (user) => {
 				await addPrediction(user?.uid || '', selectedTeam, momSelected || '', matchId);
 				lastUpdated = new Date().getTime();
@@ -54,7 +57,7 @@
 			const prediction = await getLatestPrediction(user?.uid || '', matchId);
             isLoading = false;
 			selectedTeam = prediction.team;
-			momSelected = prediction.manOfMatch;
+			momSelected = prediction.manOfMatch === '' ? 'No Selection' :  prediction.manOfMatch ;
 			if (prediction.timestamp) {
 				console.log(prediction);
 				lastUpdated = prediction.timestamp.seconds * 1000;
@@ -70,7 +73,10 @@
                     clearInterval(interval);
                     disabled = true;
                 }else {
-                    if(diff > 60) {
+                    if(diff > 60*60*24){
+                        warning = `Closes in ${Math.trunc(diff/(60*60*24))} days`;
+
+                    }else if(diff > 60) {
                         warning = `Closes in ${Math.trunc(diff/60)} minutes`;
                     }else{
                         warning = `Closes in ${diff} seconds`;
@@ -113,22 +119,20 @@
 
 			<FormField>
 				<Radio bind:group={selectedTeam} value={'none'}   {disabled}/>
-				<span slot="label"> No Selection </span>
+				<span slot="label"> None </span>
 			</FormField>
-			<br />
 
 			<FormField>
 				<Radio bind:group={selectedTeam} value={match.homeCode}   {disabled} />
 				<span slot="label">
-					{match.home}
+					{match.homeCode}
 				</span>
 			</FormField>
-			<br />
 
 			<FormField>
 				<Radio bind:group={selectedTeam} value={match.awayCode}  {disabled} />
 				<span slot="label">
-					{match.away}
+					{match.awayCode}
 				</span>
 			</FormField>
 
@@ -136,12 +140,7 @@
 			<div>Man of the Match</div>
 			<br />
 			<div class="autocomplete">
-				<Autocomplete  {disabled}
-					options={selectedPlayers}
-					textfield$variant="outlined"
-					bind:value={momSelected}
-					label="Man of the match"
-				/>
+                <Select options={selectedPlayers} bind:value={momSelected} />
 				<br />
 			</div>
 
