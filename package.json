@@ -23,6 +23,7 @@
 		"@smui/menu": "^7.0.0-beta.0",
 		"@smui/radio": "^7.0.0-beta.0",
 		"@smui/select": "^7.0.0-beta.0",
+		"@smui/snackbar": "^7.0.0-beta.0",
 		"@smui/top-app-bar": "^7.0.0-beta.0",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-vercel": "^2.4.1",

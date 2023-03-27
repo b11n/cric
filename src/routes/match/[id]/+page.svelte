@@ -15,6 +15,12 @@
     import Select from '../../../components/select.svelte';
     import dayjs from 'dayjs'
 
+    import Snackbar, { Actions, Label as SnackbarLabel } from '@smui/snackbar';
+    import IconButton from '@smui/icon-button';
+ 
+    let snackbarWithClose: Snackbar;
+
+
 	const matchId = parseInt($page.params.id);
 	const match = matches[matchId];
 	const selectedPlayers = players
@@ -49,6 +55,7 @@
 				await addPrediction(user?.uid || '', selectedTeam, momSelected || '', matchId);
 				lastUpdated = new Date().getTime();
                 isLoading = false;
+                snackbarWithClose.open();
 			});
 		};
 
@@ -61,7 +68,9 @@
 			if (prediction.timestamp) {
 				console.log(prediction);
 				lastUpdated = prediction.timestamp.seconds * 1000;
+                
 			}
+           
 		});
 
 
@@ -94,6 +103,13 @@
         clearInterval(interval);
     })
 </script>
+
+<Snackbar bind:this={snackbarWithClose} timeoutMs={4000}>
+    <SnackbarLabel>Prediction saved.</SnackbarLabel>
+    <Actions>
+      <IconButton class="material-icons" title="Dismiss">close</IconButton>
+    </Actions>
+  </Snackbar>
 
 <div class="wrap">
 	<Match {match} condensed={true} selected={selectedTeam} />
