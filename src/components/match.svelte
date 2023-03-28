@@ -35,7 +35,9 @@
             <div class="man-of-match-bet">{bet.manOfMatch}</div>
         {/if}
         <div></div>
-        <div class="date"><div>{match.date} {match.time}  </div>  <Timer ts={new Date(match.date + " " +match.time)}></Timer></div> 
+        {#if !(bet.manOfMatch !== 'none' || bet.team !== 'none')}
+            <div class="date"><div>{match.date} {match.time}  </div>  <Timer ts={new Date(match.date + " " +match.time)}></Timer></div> 
+        {/if}
 
     </div>
 {:else}
