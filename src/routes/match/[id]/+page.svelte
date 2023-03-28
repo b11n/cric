@@ -50,9 +50,9 @@
 		const { addPrediction, getLatestPrediction } = initDatabase();
 		saveSelection = () => {
             isLoading = true;
-            const manOfMatch = momSelected === 'No Selection' ? '' : momSelected;
+            const manOfMatch = momSelected === 'No Selection' ? 'none' : momSelected;
 			authStore.subscribe(async (user) => {
-				await addPrediction(user?.uid || '', selectedTeam, momSelected || '', matchId);
+				await addPrediction(user?.uid || '', selectedTeam, manOfMatch || '', matchId);
 				lastUpdated = new Date().getTime();
                 isLoading = false;
                 snackbarWithClose.open();
@@ -64,7 +64,7 @@
 			const prediction = await getLatestPrediction(user?.uid || '', matchId);
             isLoading = false;
 			selectedTeam = prediction.team;
-			momSelected = prediction.manOfMatch === '' ? 'No Selection' :  prediction.manOfMatch ;
+			momSelected = prediction.manOfMatch === 'none' ? 'No Selection' :  prediction.manOfMatch ;
 			if (prediction.timestamp) {
 				console.log(prediction);
 				lastUpdated = prediction.timestamp.seconds * 1000;
