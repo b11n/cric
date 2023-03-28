@@ -32,4 +32,7 @@
 		margin: 12px;
 		display: block;
 	}
+
+    a:link    { color: black; }
+    a:visited { color: black; } 
 </style>

@@ -1,10 +1,10 @@
 export const matches = [
   {
-    date: '27-March-2023',
+    date: '31-March-2023',
     home: 'Gujarat Titans',
     away: 'Chennai Super Kings',
     venue: 'Ahmedabad',
-    time: '14:00',
+    time: '19:30',
     awayCode: 'CSK',
     homeCode: 'GT'
   },
@@ -72,7 +72,7 @@ export const matches = [
     homeCode: 'RR'
   },
   {
-    date: '06April-2023',
+    date: '06 April-2023',
     home: 'Kolkata Knight Riders',
     away: 'Royal Challengers Bangalore',
     venue: 'Kolkata',
@@ -108,7 +108,7 @@ export const matches = [
     homeCode: 'MI'
   },
   {
-    date: '09April-2023',
+    date: '09 April-2023',
     home: 'Gujarat Titans',
     away: 'Kolkata Knight Riders',
     venue: 'Ahmedabad',
@@ -144,7 +144,7 @@ export const matches = [
     homeCode: 'DC'
   },
   {
-    date: '12-April-2023',
+    date: '12- April-2023',
     home: 'Chennai Super Kings',
     away: 'Rajasthan Royals',
     venue: 'Chennai',
@@ -153,7 +153,7 @@ export const matches = [
     homeCode: 'CSK'
   },
   {
-    date: '13-April-2023',
+    date: '13- April-2023',
     home: 'Punjab Kings',
     away: 'Gujarat Titans',
     venue: 'Mohali',
@@ -162,7 +162,7 @@ export const matches = [
     homeCode: 'PBKS'
   },
   {
-    date: '14-April-2023',
+    date: '14- April-2023',
     home: 'Kolkata Knight Riders',
     away: 'Sunrisers Hyderabad',
     venue: 'Kolkata',
@@ -171,7 +171,7 @@ export const matches = [
     homeCode: 'KKR'
   },
   {
-    date: '15-April-2023',
+    date: '15- April-2023',
     home: 'Royal Challengers Bangalore',
     away: 'Delhi Capitals',
     venue: 'Bengaluru',
@@ -180,7 +180,7 @@ export const matches = [
     homeCode: 'RCB'
   },
   {
-    date: '15-April-2023',
+    date: '15- April-2023',
     home: 'Lucknow Super Giants',
     away: 'Punjab Kings',
     venue: 'Lucknow',
@@ -207,7 +207,7 @@ export const matches = [
     homeCode: 'GT'
   },
   {
-    date: '17-April-2023',
+    date: '17- April-2023',
     home: 'Royal Challengers Bangalore',
     away: 'Chennai Super Kings',
     venue: 'Bengaluru',
@@ -216,7 +216,7 @@ export const matches = [
     homeCode: 'RCB'
   },
   {
-    date: '18-April-2023',
+    date: '18- April-2023',
     home: 'Sunrisers Hyderabad',
     away: 'Mumbai Indians',
     venue: 'Hyderabad',
@@ -225,7 +225,7 @@ export const matches = [
     homeCode: 'SRH'
   },
   {
-    date: '19-April-2023',
+    date: '19- April-2023',
     home: 'Rajasthan Royals',
     away: 'Lucknow Super Giants',
     venue: 'Jaipur',
@@ -234,7 +234,7 @@ export const matches = [
     homeCode: 'RR'
   },
   {
-    date: '20-April-2023',
+    date: '20- April-2023',
     home: 'Punjab Kings',
     away: 'Royal Challengers Bangalore',
     venue: 'Mohali',
@@ -243,7 +243,7 @@ export const matches = [
     homeCode: 'PBKS'
   },
   {
-    date: '20-April-2023',
+    date: '20- April-2023',
     home: 'Delhi Capitals',
     away: 'Kolkata Knight Riders',
     venue: 'Delhi',
@@ -261,7 +261,7 @@ export const matches = [
     homeCode: 'CSK'
   },
   {
-    date: '22-April-2023',
+    date: '22- April-2023',
     home: 'Lucknow Super Giants',
     away: 'Gujarat Titans',
     venue: 'Lucknow',
@@ -270,7 +270,7 @@ export const matches = [
     homeCode: 'LSG'
   },
   {
-    date: '22-April-2023',
+    date: '22- April-2023',
     home: 'Mumbai Indians',
     away: 'Punjab Kings',
     venue: 'Mumbai',
@@ -279,7 +279,7 @@ export const matches = [
     homeCode: 'MI'
   },
   {
-    date: '23-April-2023',
+    date: '23- April-2023',
     home: 'Royal Challengers Bangalore',
     away: 'Rajasthan Royals',
     venue: 'Bengaluru',
@@ -288,7 +288,7 @@ export const matches = [
     homeCode: 'RCB'
   },
   {
-    date: '23-April-2023',
+    date: '23- April-2023',
     home: 'Kolkata Knight Riders',
     away: 'Chennai Super Kings',
     venue: 'Kolkata',
@@ -297,7 +297,7 @@ export const matches = [
     homeCode: 'KKR'
   },
   {
-    date: '24-April-2023',
+    date: '24- April-2023',
     home: 'Sunrisers Hyderabad',
     away: 'Delhi Capitals',
     venue: 'Hyderabad',
@@ -306,7 +306,7 @@ export const matches = [
     homeCode: 'SRH'
   },
   {
-    date: '25-April-2023',
+    date: '25- April-2023',
     home: 'Gujarat Titans',
     away: 'Mumbai Indians',
     venue: 'Ahmedabad',
@@ -315,7 +315,7 @@ export const matches = [
     homeCode: 'GT'
   },
   {
-    date: '26-April-2023',
+    date: '26- April-2023',
     home: 'Royal Challengers Bangalore',
     away: 'Kolkata Knight Riders',
     venue: 'Bengaluru',
@@ -324,7 +324,7 @@ export const matches = [
     homeCode: 'RCB'
   },
   {
-    date: '27-April-2023',
+    date: '27- April-2023',
     home: 'Rajasthan Royals',
     away: 'Chennai Super Kings',
     venue: 'Jaipur',
@@ -333,7 +333,7 @@ export const matches = [
     homeCode: 'RR'
   },
   {
-    date: '28-April-2023',
+    date: '28- April-2023',
     home: 'Punjab Kings',
     away: 'Lucknow Super Giants',
     venue: 'Mohali',
@@ -342,7 +342,7 @@ export const matches = [
     homeCode: 'PBKS'
   },
   {
-    date: '29-April-2023',
+    date: '29- April-2023',
     home: 'Kolkata Knight Riders',
     away: 'Gujarat Titans',
     venue: 'Kolkata',
@@ -351,7 +351,7 @@ export const matches = [
     homeCode: 'KKR'
   },
   {
-    date: '29-April-2023',
+    date: '29- April-2023',
     home: 'Delhi Capitals',
     away: 'Sunrisers Hyderabad',
     venue: 'Delhi',
@@ -360,7 +360,7 @@ export const matches = [
     homeCode: 'DC'
   },
   {
-    date: '30-April-2023',
+    date: '30- April-2023',
     home: 'Chennai Super Kings',
     away: 'Punjab Kings',
     venue: 'Chennai',
@@ -369,7 +369,7 @@ export const matches = [
     homeCode: 'CSK'
   },
   {
-    date: '30-April-2023',
+    date: '30- April-2023',
     home: 'Mumbai Indians',
     away: 'Rajasthan Royals',
     venue: 'Mumbai',

@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Radio from '@smui/radio';
 	import FormField from '@smui/form-field';
-	import Autocomplete from '@smui-extra/autocomplete';
 	import Button, { Label } from '@smui/button';
 	import LinearProgress from '@smui/linear-progress';
 	import { onMount, onDestroy } from 'svelte';
@@ -180,9 +179,8 @@
 <style>
 	.match {
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
-		border: 2px solid #888888;
 		border-radius: 8px;
-		
+		background-color: white;
 		font-size: 20px;
 	}
 

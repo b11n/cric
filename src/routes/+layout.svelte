@@ -1,37 +1,30 @@
 <script lang="ts">
+	import Button, { Label } from '@smui/button';
+	import IconButton from '@smui/icon-button';
+	import List, { Item, Text } from '@smui/list';
+	import Menu from '@smui/menu';
+	import TopAppBar, { Row, Section, Title } from '@smui/top-app-bar';
 	import { onMount } from 'svelte';
+	import { initDatabase } from '../client/db';
 	import { initFirebase } from '../client/firebase';
 	import { auth as authStore } from '../store/auth';
-    import Button, { Label } from '@smui/button';
-
-
-	import TopAppBar, { Row, Section, Title } from '@smui/top-app-bar';
-	import Menu from '@smui/menu';
-	import List, { Item, Text } from '@smui/list';
-	import IconButton from '@smui/icon-button';
-	import { initDatabase } from '../client/db';
 
 	let menu: Menu;
-
 	let hasUser = false;
-	let userName = '';
 
-	let login = () => {
-		console.log('T');
-	};
-
+	let login = () => {};
 	let signout = () => {};
 
 	onMount(() => {
 		const { auth, onAuthStateChanged, signIn, signOutFromApp } = initFirebase();
-        const {checkAndAddUser} = initDatabase();
+		const { checkAndAddUser } = initDatabase();
 		login = signIn();
 		signout = signOutFromApp();
+
 		onAuthStateChanged(auth, (data: any) => {
 			if (data && data.email && data.uid) {
+				checkAndAddUser(data.uid, data.displayName, data.email);
 
-                checkAndAddUser(data.uid,data.displayName, data.email);
-                
 				authStore.set({
 					userName: data.displayName,
 					uid: data.uid,
@@ -40,31 +33,24 @@
 				});
 				hasUser = true;
 			} else {
-				authStore.set({});
+				authStore.set(null);
 				hasUser = false;
 			}
 		});
 	});
-
-	let prominent = false;
-	let dense = false;
-	let secondaryColor = false;
 </script>
 
 {#if !hasUser}
-    <div class="large-bg">
-        <Button on:click={login} variant="raised">
-            <Label>Login with Google</Label>
-          </Button>
-    </div>
-	
+	<div class="large-bg">
+		<Button on:click={login} variant="raised">
+			<Label>Login with Google</Label>
+		</Button>
+	</div>
 {:else}
 	<div class="top-app-bar-container">
 		<TopAppBar
 			variant="static"
-			{prominent}
-			{dense}
-			color={secondaryColor ? 'secondary' : 'primary'}
+			color={'primary'}
 		>
 			<Row>
 				<Section>
@@ -92,25 +78,23 @@
 		</TopAppBar>
 	</div>
 	<slot />
-    <footer>
-        <nav>
-            <a href="/">
-                <i class="icon-home" />
-                <span>Home</span>
-            </a>
-            <a href="/matches">
-                <i class="icon-list-bullet" />
-                <span>Matches</span>
-            </a>
-            <a href="/leaderboard">
-                <i class="icon-award" />
-                <span>Leaders</span>
-            </a>
-        </nav>
-    </footer>
+	<footer>
+		<nav>
+			<a href="/">
+				<i class="icon-home" />
+				<span>Home</span>
+			</a>
+			<a href="/matches">
+				<i class="icon-list-bullet" />
+				<span>Matches</span>
+			</a>
+			<a href="/leaderboard">
+				<i class="icon-award" />
+				<span>Leaders</span>
+			</a>
+		</nav>
+	</footer>
 {/if}
-
-
 
 <style>
 	@import url('/static/fonts/icons/css/fontello.css');
@@ -155,15 +139,14 @@
 		overflow: hidden;
 	}
 
-
-    .large-bg {
-        height: 100vh;
-        width: 100%;
-        background-image: url('https://lh3.googleusercontent.com/PBDs4y0TtyR-7KNnhalhGyATm3VODRRtlyBwMS8nQJj0i9qRDF2PmMl2Sy6236jDd9uDuRGPYetI-92q95rJHjIjNoTKxjZY0OUkP8U');
-        overflow: hidden;
-        background-position: bottom;
-        display: flex;
-    align-items: center;
-    justify-content: center;
-    }
+	.large-bg {
+		height: 100vh;
+		width: 100%;
+		background-image: url('https://lh3.googleusercontent.com/PBDs4y0TtyR-7KNnhalhGyATm3VODRRtlyBwMS8nQJj0i9qRDF2PmMl2Sy6236jDd9uDuRGPYetI-92q95rJHjIjNoTKxjZY0OUkP8U');
+		overflow: hidden;
+		background-position: bottom;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 </style>
