@@ -8,6 +8,7 @@
 	import Bets from '../components/bets.svelte';
 	import Button, { Label } from '@smui/button';
 	import type { Match as MatchType } from '../types';
+	import Appsection from '../components/appsection.svelte';
 
 	let subset: MatchType[] = [];
 	let subsetIndeces: number[] = [];
@@ -35,40 +36,44 @@
 	});
 </script>
 
-<div class="home-section">
-	<div class="heading">
+
+<Appsection>
+	<div slot="header">
 		{#if $auth}
 			Welcome {$auth.userName}
 		{/if}
 	</div>
-	<div class="section-content" />
-</div>
+</Appsection>
 
-<div class="home-section">
-	<div class="heading">Upcoming Matches</div>
-
-	<div class="section-content">
-		<div class="match-list">
+<Appsection>
+	<div slot="header">
+		Upcoming Matches
+	</div>
+    <div slot="body">
+        <div class="match-list">
 			{#each subset as match, i}
 				<a href="/match/{subsetIndeces[i]}">
 					<Match {match} displayMode="list" />
 				</a>
 			{/each}
 		</div>
-	</div>
-</div>
+    </div>
+</Appsection>
 
-<div class="home-section">
-	<div class="heading">Your Bets</div>
-	<div class="section-content">
-		<Bets mini={true} />
+
+<Appsection>
+	<div slot="header">
+		Your Bets
+	</div>
+    <div slot="body">
+        <Bets mini={true} />
         <div class="button-wrap">
             <Button href="/bets">
                 <Label>More</Label>
             </Button>
         </div>
-	</div>
-</div>
+    </div>
+</Appsection>
 
 <style>
 	.heading {
@@ -89,7 +94,7 @@
 
 	a {
 		text-decoration: none;
-		margin: 12px;
+		margin: 12px 0;
 		display: block;
 	}
 

@@ -1,21 +1,20 @@
 <script lang="ts">
-	import Radio from '@smui/radio';
-	import FormField from '@smui/form-field';
-	import Button, { Label } from '@smui/button';
-	import LinearProgress from '@smui/linear-progress';
-	import { onMount, onDestroy } from 'svelte';
 	import { page } from '$app/stores';
-
+	import Button, { Label } from '@smui/button';
+	import FormField from '@smui/form-field';
+	import LinearProgress from '@smui/linear-progress';
+	import Radio from '@smui/radio';
+	import dayjs from 'dayjs';
+	import { onDestroy, onMount } from 'svelte';
 	import { matches } from '../../../../data/matches';
 	import { players } from '../../../../data/players';
-	import Match from '../../../components/match.svelte';
 	import { initDatabase } from '../../../client/db';
-	import { auth as authStore } from '../../../store/auth';
+	import Match from '../../../components/match.svelte';
 	import Select from '../../../components/select.svelte';
-	import dayjs from 'dayjs';
+	import { auth as authStore } from '../../../store/auth';
 
-	import Snackbar, { Actions, Label as SnackbarLabel } from '@smui/snackbar';
 	import IconButton from '@smui/icon-button';
+	import Snackbar, { Actions, Label as SnackbarLabel } from '@smui/snackbar';
 
 	let snackbarWithClose: Snackbar;
 
@@ -229,5 +228,6 @@
 		color: rgba(112, 112, 112, 0.87);
         font-weight: bold;
         text-transform: uppercase;
+        height: 14px;
     }
 </style>

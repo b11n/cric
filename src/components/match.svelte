@@ -159,6 +159,6 @@
 		text-transform: uppercase;
 		text-align: center;
         max-width: 128px;
-        height: 20px;
+        height: 38px;
 	}
 </style>

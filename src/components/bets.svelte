@@ -31,7 +31,7 @@
 <style>
 	a {
 		text-decoration: none;
-		margin: 12px;
+		margin: 12px 0;
 		display: block;
 	}
 
