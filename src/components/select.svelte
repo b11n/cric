@@ -3,6 +3,7 @@
 
      export let options:string[] = [];
      export let value = '';
+     export let disabled = false;
 
 
 </script>
@@ -16,7 +17,7 @@
             </svg>
         </div>
     </div>
-    <select name="" id="" bind:value={value}>
+    <select name="" id="" bind:value={value} {disabled}>
         {#each options as option}
             <option value={option}>{option}</option>
         {/each}

@@ -11,14 +11,13 @@
 	import Match from '../../../components/match.svelte';
 	import { initDatabase } from '../../../client/db';
 	import { auth as authStore } from '../../../store/auth';
-    import Select from '../../../components/select.svelte';
-    import dayjs from 'dayjs'
+	import Select from '../../../components/select.svelte';
+	import dayjs from 'dayjs';
 
-    import Snackbar, { Actions, Label as SnackbarLabel } from '@smui/snackbar';
-    import IconButton from '@smui/icon-button';
- 
-    let snackbarWithClose: Snackbar;
+	import Snackbar, { Actions, Label as SnackbarLabel } from '@smui/snackbar';
+	import IconButton from '@smui/icon-button';
 
+	let snackbarWithClose: Snackbar;
 
 	const matchId = parseInt($page.params.id);
 	const match = matches[matchId];
@@ -27,125 +26,125 @@
 			return player.team === match.homeCode || player.team === match.awayCode;
 		})
 		.map((player) => player.name);
-        selectedPlayers.push('No Selection')
+	selectedPlayers.push('No Selection');
 
 	let saveSelection = () => {};
 
 	let selectedTeam = 'none';
 	let momSelected = '';
 	let lastUpdated: number | null = null;
-    let isLoading = false;
-    let interval = -1;
-    let disabled = false;
-    let warning = '';
+	let isLoading = false;
+	let interval = -1;
+	let disabled = false;
+	let warning = '';
 
-    function getDiff(time1:number, time2:number) {
-        const date1 = dayjs(time1);
-        const date2 = dayjs(time2);
-        return date2.diff(date1, 'second');
-    }
+	function getDiff(time1: number, time2: number) {
+		const date1 = dayjs(time1);
+		const date2 = dayjs(time2);
+		return date2.diff(date1, 'second');
+	}
 
 	onMount(() => {
 		const { addPrediction, getLatestPrediction } = initDatabase();
 		saveSelection = () => {
-            isLoading = true;
-            const manOfMatch = momSelected === 'No Selection' ? 'none' : momSelected;
+			isLoading = true;
+			const manOfMatch = momSelected === 'No Selection' ? 'none' : momSelected;
 			authStore.subscribe(async (user) => {
 				await addPrediction(user?.uid || '', selectedTeam, manOfMatch || '', matchId);
 				lastUpdated = new Date().getTime();
-                isLoading = false;
-                snackbarWithClose.open();
+				isLoading = false;
+				snackbarWithClose.forceOpen();
 			});
 		};
 
-        isLoading = true;
+		isLoading = true;
 		authStore.subscribe(async (user) => {
 			const prediction = await getLatestPrediction(user?.uid || '', matchId);
-            isLoading = false;
+			isLoading = false;
 			selectedTeam = prediction.team;
-			momSelected = prediction.manOfMatch === 'none' ? 'No Selection' :  prediction.manOfMatch ;
+			momSelected = prediction.manOfMatch === 'none' ? 'No Selection' : prediction.manOfMatch;
 			if (prediction.timestamp) {
 				console.log(prediction);
 				lastUpdated = prediction.timestamp.seconds * 1000;
-                
 			}
-           
 		});
 
-
-        let diff = getDiff(new Date().getTime(), new Date(`${match.date} ${match.time}`).getTime())
-        if(diff > 0) {
-            interval = window.setInterval(()=>{
-                diff = getDiff(new Date().getTime(), new Date(`${match.date} ${match.time}`).getTime())
-                if(diff < 0) {
-                    clearInterval(interval);
-                    disabled = true;
-                }else {
-                    if(diff > 60*60*24){
-                        warning = `Closes in ${Math.trunc(diff/(60*60*24))} days`;
-
-                    }else if(diff > 60) {
-                        warning = `Closes in ${Math.trunc(diff/60)} minutes`;
-                    }else{
-                        warning = `Closes in ${diff} seconds`;
-                    }
-                }
-            },1000);
-        }else {
-            disabled = true;
-        }
-
-
+		let diff = getDiff(new Date().getTime(), new Date(`${match.date} ${match.time}`).getTime());
+		if (diff > 0) {
+			interval = window.setInterval(() => {
+				diff = getDiff(new Date().getTime(), new Date(`${match.date} ${match.time}`).getTime());
+				if (diff < 0) {
+					clearInterval(interval);
+					warning = `Closed for predictions`;
+					disabled = true;
+				} else {
+					if (diff > 60 * 60 * 24) {
+						warning = `Closes in ${Math.trunc(diff / (60 * 60 * 24))} days`;
+					} else if (diff > 60) {
+						warning = `Closes in ${Math.trunc(diff / 60)} minutes`;
+					} else {
+						warning = `Closes in ${diff} seconds`;
+					}
+				}
+			}, 1000);
+		} else {
+			warning = `Closed for predictions`;
+			disabled = true;
+		}
 	});
 
-    onDestroy(()=>{
-        clearInterval(interval);
-    })
+	onDestroy(() => {
+		clearInterval(interval);
+	});
 </script>
 
 <Snackbar bind:this={snackbarWithClose} timeoutMs={4000}>
-    <SnackbarLabel>Prediction saved.</SnackbarLabel>
-    <Actions>
-      <IconButton class="material-icons" title="Dismiss">close</IconButton>
-    </Actions>
-  </Snackbar>
+	<SnackbarLabel>Prediction saved.</SnackbarLabel>
+	<Actions>
+		<IconButton class="material-icons" title="Dismiss">close</IconButton>
+	</Actions>
+</Snackbar>
 
 <div class="wrap">
 	<Match {match} condensed={true} selected={selectedTeam} />
 
 	<br /><br />
 	<div class="match">
-        <div class="loading-container">
-            {#if isLoading} 
-                <LinearProgress indeterminate />
-            {/if}
-        </div>
+		<div class="loading-container">
+			{#if isLoading}
+				<LinearProgress indeterminate />
+			{/if}
+		</div>
 
 		<div class="matchcontent">
-            <div class="heading">
-                <div class="title">YOUR BETS</div>
-                <div class="last-updated"></div>
-            </div>
-            {warning}
+			<div class="heading">
+				<div class="title">YOUR BETS</div>
+                <div class="lastupdaed-wrapper">
+					{#if lastUpdated}
+						<div class="lastupdated">Updated<br /> {new Date(lastUpdated).toLocaleString()}</div>
+					{/if}
+				</div>
+			</div>
+			{warning}
 
 			<br /><br />
 
 			<div>Winner</div>
 
 			<FormField>
-				<Radio bind:group={selectedTeam} value={'none'}   {disabled}/>
+				<Radio bind:group={selectedTeam} value={'none'} {disabled} />
 				<span slot="label"> None </span>
 			</FormField>
 
 			<FormField>
-				<Radio bind:group={selectedTeam} value={match.homeCode}   {disabled} />
+				<Radio bind:group={selectedTeam} value={match.homeCode} {disabled} />
 				<span slot="label">
 					{match.homeCode}
 				</span>
 			</FormField>
 
 			<FormField>
-				<Radio bind:group={selectedTeam} value={match.awayCode}  {disabled} />
+				<Radio bind:group={selectedTeam} value={match.awayCode} {disabled} />
 				<span slot="label">
 					{match.awayCode}
 				</span>
@@ -155,20 +154,15 @@
 			<div>Man of the Match</div>
 			<br />
 			<div class="autocomplete">
-                <Select options={selectedPlayers} bind:value={momSelected} />
+				<Select options={selectedPlayers} bind:value={momSelected} {disabled} />
 				<br />
 			</div>
 
 			<br />
 
 			<div class="bottom">
-				<div class="lastupdaed-wrapper">
-					{#if lastUpdated}
-						<div class="lastupdated">Updated<br /> {new Date(lastUpdated).toLocaleString()}</div>
-					{/if}
-				</div>
 
-				<Button variant="raised" on:click={saveSelection} {disabled}>
+				<Button variant="raised" on:click={saveSelection} {disabled} style="width: 100%">
 					<Label>Save selection</Label>
 				</Button>
 			</div>
@@ -184,13 +178,19 @@
 		font-size: 20px;
 	}
 
-    .loading-container {
-        height: 2px;
+    .heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .matchcontent {
-        padding: 12px;
-    }
+	.loading-container {
+		height: 2px;
+	}
+
+	.matchcontent {
+		padding: 12px;
+	}
 
 	.wrap {
 		padding: 16px;
@@ -201,11 +201,10 @@
 		width: 100%;
 	}
 
-	.lastupdated,
-	.selected {
+	.lastupdated {
 		font-family: Roboto;
 		font-size: 14px;
-		color: rgba(0, 0, 0, 0.87);
+		color: rgba(135, 135, 135, 0.87);
 		margin-top: 8px;
 	}
 
@@ -217,4 +216,8 @@
 		display: flex;
 		justify-content: space-between;
 	}
+
+    Button {
+        width: 100%;
+    }
 </style>
