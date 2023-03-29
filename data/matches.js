@@ -1,33 +1,33 @@
 export const matches = [
   {
-    date: '29-March-2023',
+    date: '30-March-2023',
     home: 'Gujarat Titans',
     away: 'Chennai Super Kings',
     venue: 'Ahmedabad',
-    time: '10:30',
+    time: '15:30',
     awayCode: 'CSK',
     homeCode: 'GT'
   },
   {
-    date: '29-March-2023',
+    date: '30-March-2023',
     home: 'Punjab Kings',
     away: 'Kolkata Knight Riders',
     venue: 'Mohali',
-    time: '11:30',
+    time: '19:30',
     awayCode: 'KKR',
     homeCode: 'PBKS'
   },
   {
-    date: '29-March-2023',
+    date: '01-April-2023',
     home: 'Lucknow Super Giants',
     away: 'Delhi Capitals',
     venue: 'Lucknow',
-    time: '13:30',
+    time: '19:30',
     awayCode: 'DC',
     homeCode: 'LSG'
   },
   {
-    date: '29-March-2023',
+    date: '02-April-2023',
     home: 'Sunrisers Hyderabad',
     away: 'Rajasthan Royals',
     venue: 'Hyderabad',
