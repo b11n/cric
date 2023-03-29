@@ -62,9 +62,11 @@
 	<div class="heading">Your Bets</div>
 	<div class="section-content">
 		<Bets mini={true} />
-		<Button href="/bets">
-			<Label>More</Label>
-		</Button>
+        <div class="button-wrap">
+            <Button href="/bets">
+                <Label>More</Label>
+            </Button>
+        </div>
 	</div>
 </div>
 
@@ -78,6 +80,12 @@
 		font-weight: bold;
 		color: #4b4b4b;
 	}
+
+    .button-wrap {
+        display: flex;
+        justify-content: end;
+        margin-right: 8px;
+    }
 
 	a {
 		text-decoration: none;

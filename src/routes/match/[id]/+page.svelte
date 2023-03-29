@@ -64,7 +64,6 @@
 			selectedTeam = prediction.team;
 			momSelected = prediction.manOfMatch === 'none' ? 'No Selection' : prediction.manOfMatch;
 			if (prediction.timestamp) {
-				console.log(prediction);
 				lastUpdated = prediction.timestamp.seconds * 1000;
 			}
 		});
@@ -125,7 +124,10 @@
 					{/if}
 				</div>
 			</div>
-			{warning}
+            <div class="warning">
+                {warning}
+            </div>
+			
 
 			<br /><br />
 
@@ -151,8 +153,8 @@
 			</FormField>
 
 			<br /><br />
-			<div>Man of the Match</div>
-			<br />
+			<div class="form-label">Man of the Match</div>
+
 			<div class="autocomplete">
 				<Select options={selectedPlayers} bind:value={momSelected} {disabled} />
 				<br />
@@ -217,7 +219,15 @@
 		justify-content: space-between;
 	}
 
-    Button {
-        width: 100%;
+    .form-label {
+        margin-bottom: 12px;
+    }
+
+    .warning {
+        font-family: Roboto;
+        font-size: 14px;
+		color: rgba(112, 112, 112, 0.87);
+        font-weight: bold;
+        text-transform: uppercase;
     }
 </style>
