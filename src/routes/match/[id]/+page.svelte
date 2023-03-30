@@ -67,10 +67,10 @@
 			}
 		});
 
-		let diff = getDiff(new Date().getTime(), new Date(`${match.date} ${match.time}`).getTime());
+		let diff = getDiff(new Date().getTime(), new Date(`${match.date} ${match.time} +5:30`).getTime());
 		if (diff > 0) {
 			interval = window.setInterval(() => {
-				diff = getDiff(new Date().getTime(), new Date(`${match.date} ${match.time}`).getTime());
+				diff = getDiff(new Date().getTime(), new Date(`${match.date} ${match.time} +5:30`).getTime());
 				if (diff < 0) {
 					clearInterval(interval);
 					warning = `Closed for predictions`;

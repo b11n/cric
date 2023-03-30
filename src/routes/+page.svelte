@@ -76,15 +76,6 @@
 </Appsection>
 
 <style>
-	.heading {
-		font-family: Noto Sans, sans-serif;
-		font-size: 24px;
-		margin-left: 14px;
-		text-transform: uppercase;
-		font-size: 16px;
-		font-weight: bold;
-		color: #4b4b4b;
-	}
 
     .button-wrap {
         display: flex;
