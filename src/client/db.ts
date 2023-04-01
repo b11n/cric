@@ -60,6 +60,13 @@ export const initDatabase = function () {
         return querySnapshot.docs.map((doc)=>doc.data());
     }
 
+    async function getFinalBets(matchId: number) {
+        const q = query(collection(db,"finalPredictions"), where('game', '==' , matchId));
+        const querySnapshot = await getDocs(q);
+        const allBets = querySnapshot.docs.map((doc)=>doc.data());
+        return allBets;
+    }
+
     async function getUserBets(userId:string) {
         const q = query(collection(db,"predictions", "list" , userId), orderBy('timestamp', 'desc'));
         const querySnapshot = await getDocs(q);
@@ -76,5 +83,5 @@ export const initDatabase = function () {
 
     }
 
-    return { db, addPrediction, getLatestPrediction,checkAndAddUser,getUserList,getUserBets };
+    return { db, addPrediction, getLatestPrediction,checkAndAddUser,getUserList,getUserBets,getFinalBets };
 }

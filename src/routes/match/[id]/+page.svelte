@@ -36,6 +36,8 @@
 	let interval = -1;
 	let disabled = false;
 	let warning = '';
+    let finalBets = [];
+    let selectedUser = null;
 
 	function getDiff(time1: number, time2: number) {
 		const date1 = dayjs(time1);
@@ -43,8 +45,8 @@
 		return date2.diff(date1, 'second');
 	}
 
-	onMount(() => {
-		const { addPrediction, getLatestPrediction } = initDatabase();
+	onMount(async () => {
+		const { addPrediction, getLatestPrediction,getFinalBets } = initDatabase();
 		saveSelection = () => {
 			isLoading = true;
 			const manOfMatch = momSelected === 'No Selection' ? 'none' : momSelected;
@@ -58,6 +60,7 @@
 
 		isLoading = true;
 		authStore.subscribe(async (user) => {
+            selectedUser = user;
 			const prediction = await getLatestPrediction(user?.uid || '', matchId);
 			isLoading = false;
 			selectedTeam = prediction.team;
@@ -88,6 +91,8 @@
 		} else {
 			warning = `Closed for predictions`;
 			disabled = true;
+            finalBets = await getFinalBets(matchId);
+            console.log(finalBets)
 		}
 	});
 
@@ -169,6 +174,25 @@
 			</div>
 		</div>
 	</div>
+
+    {#if disabled}
+        <div class="match bets">
+
+            <div class="heading">
+                <div class="title">OTHERS' BETS</div>
+            </div>
+            {#each finalBets as bet, i}
+                {#if selectedUser.uid !== bet.userId && (bet.team !== 'none' || bet.mom != 'none')}
+                    <div class="bet">
+                        <div class="user-name">{bet.userName}</div>
+                        <div class="team">{bet.team}</div>
+                        <div class="mom">{bet.mom}</div>
+                    </div>
+                {/if}
+                
+            {/each}
+        </div>
+    {/if}
 </div>
 
 <style>
@@ -229,5 +253,24 @@
         font-weight: bold;
         text-transform: uppercase;
         height: 14px;
+    }
+
+    .bet{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bets {
+        padding: 16px;
+        margin-top: 36px;
+    }
+
+
+    .bets .heading {
+        margin-bottom: 20px;
+    }
+
+    .user-name, .team, .mom {
+        width: 33%;
     }
 </style>

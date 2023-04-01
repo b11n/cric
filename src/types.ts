@@ -20,4 +20,5 @@ export interface User {
     timestamp: Date;
     userId: string;
     userName: string;
+    points?: number;
 }
