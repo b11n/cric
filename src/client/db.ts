@@ -61,7 +61,7 @@ export const initDatabase = function () {
     }
 
     async function getFinalBets(matchId: number) {
-        const q = query(collection(db,"finalPredictions"), where('game', '==' , matchId));
+        const q = query(collection(db,"finalPredictions2"), where('game', '==' , matchId));
         const querySnapshot = await getDocs(q);
         const allBets = querySnapshot.docs.map((doc)=>doc.data());
         return allBets;
