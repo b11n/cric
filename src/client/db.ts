@@ -30,6 +30,13 @@ export const initDatabase = function () {
         return result;
     }
 
+    async function getLeaderList() {
+        const q = query(collection(db,"leaderboard") , orderBy('points','desc')) ;
+        const querySnapshot = await getDocs(q);
+        const result = querySnapshot.docs.map((doc)=>doc.data());
+        return result;
+    }
+
     async function addPrediction(uid: string, team: string, manOfMatch: string, matchId: number) {
         const docRef = await addDoc(collection(db, "/predictions/list/" + uid), {
             team,
@@ -83,5 +90,5 @@ export const initDatabase = function () {
 
     }
 
-    return { db, addPrediction, getLatestPrediction,checkAndAddUser,getUserList,getUserBets,getFinalBets };
+    return { db, addPrediction, getLatestPrediction,checkAndAddUser,getUserList,getUserBets,getFinalBets,getLeaderList };
 }

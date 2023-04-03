@@ -6,19 +6,21 @@
 	let userList: User[] = [];
 
 	onMount(async () => {
-		const { getUserList } = initDatabase();
-		userList = (await getUserList()) as User[];
+		const { getLeaderList } = initDatabase();
+		userList = (await getLeaderList()) as User[];
 	});
 </script>
 
 <div class="heading">Leaderboard</div>
 
-{#each userList as result}
-	<div class="user-row">
-		<div>{result.userName}</div>
-		<div>0</div>
-	</div>
-{/each}
+<div>
+	{#each userList as result}
+		<div class="user-row">
+			<div>{result.userName}</div>
+			<div>{result.points}</div>
+		</div>
+	{/each}
+</div>
 
 <style>
 	.heading {

@@ -142,7 +142,7 @@
 	.large-bg {
 		height: 100vh;
 		width: 100%;
-		background-image: url('https://lh3.googleusercontent.com/PBDs4y0TtyR-7KNnhalhGyATm3VODRRtlyBwMS8nQJj0i9qRDF2PmMl2Sy6236jDd9uDuRGPYetI-92q95rJHjIjNoTKxjZY0OUkP8U');
+		background-image: url('https://cricnerds.com/wp-content/uploads/2022/12/ipl-2023-trophy.png.webp');
 		overflow: hidden;
 		background-position: bottom;
 		display: flex;
