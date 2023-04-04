@@ -7,6 +7,7 @@
 	import { onMount } from 'svelte';
 	import { initDatabase } from '../client/db';
 	import { initFirebase } from '../client/firebase';
+	import Analytics from '../components/analytics.svelte';
 	import { auth as authStore } from '../store/auth';
 
 	let menu: Menu;
@@ -39,6 +40,8 @@
 		});
 	});
 </script>
+
+<Analytics />
 
 {#if !hasUser}
 	<div class="large-bg">
