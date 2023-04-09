@@ -9,10 +9,12 @@
 	import Button, { Label } from '@smui/button';
 	import type { Match as MatchType } from '../types';
 	import Appsection from '../components/appsection.svelte';
+	import Homenotification from '../components/homenotification.svelte';
 
 	let subset: MatchType[] = [];
 	let subsetIndeces: number[] = [];
 	let bets = [];
+	let enableNotifications = ()=>{};
 
 	function getMatchAfterCurrentDate() {
 		for (let i = 0; i < matches.length; i++) {
@@ -42,6 +44,9 @@
 		{#if $auth}
 			Welcome {$auth.userName}
 		{/if}
+	</div>
+	<div slot="body">
+		<Homenotification></Homenotification>
 	</div>
 </Appsection>
 
@@ -74,6 +79,8 @@
         </div>
     </div>
 </Appsection>
+
+
 
 <style>
 

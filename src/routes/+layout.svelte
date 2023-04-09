@@ -51,10 +51,7 @@
 	</div>
 {:else}
 	<div class="top-app-bar-container">
-		<TopAppBar
-			variant="static"
-			color={'primary'}
-		>
+		<TopAppBar variant="static" color={'primary'}>
 			<Row>
 				<Section>
 					<Title>GuessPL</Title>
@@ -151,5 +148,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		background-size: cover;
 	}
 </style>

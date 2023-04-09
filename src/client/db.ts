@@ -1,4 +1,4 @@
-import { addDoc, collection, getDocs, getFirestore, orderBy, query, serverTimestamp, where } from "firebase/firestore";
+import { addDoc, collection, getDocs, getFirestore, orderBy, query,arrayUnion,updateDoc,doc, serverTimestamp, where } from "firebase/firestore";
 
 import { initFirebase } from './firebase';
 
@@ -74,6 +74,15 @@ export const initDatabase = function () {
         return allBets;
     }
 
+    async function getFeatureUsers(featureName: string) {
+        const q = query(collection(db,"featureflags"));
+        const querySnapshot = await getDocs(q);
+        const found = querySnapshot.docs.find((doc)=>{
+            return doc.id === featureName;
+        });
+        return found?.data();
+    }
+
     async function getUserBets(userId:string) {
         const q = query(collection(db,"predictions", "list" , userId), orderBy('timestamp', 'desc'));
         const querySnapshot = await getDocs(q);
@@ -90,5 +99,20 @@ export const initDatabase = function () {
 
     }
 
-    return { db, addPrediction, getLatestPrediction,checkAndAddUser,getUserList,getUserBets,getFinalBets,getLeaderList };
+    async function registerToken(userId: string, token:string) {
+
+        const q = query(collection(db,"users"), where('userId', '==', userId) );
+        const querySnapshot = await getDocs(q);
+        if(querySnapshot.docs.length > 0) {
+            const user = querySnapshot.docs[0];
+            await updateDoc(doc(db, "users", user.id), {
+                tokens: arrayUnion(token)
+              });
+        }
+    }
+
+
+
+
+    return { db, addPrediction,registerToken, getLatestPrediction,checkAndAddUser,getUserList,getUserBets,getFinalBets,getLeaderList,getFeatureUsers };
 }
