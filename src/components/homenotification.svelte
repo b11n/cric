@@ -32,7 +32,7 @@
     <Alert>
         <div slot="header">Enable notifications</div>
         <div slot="body">
-            Enable notifications to alert you before a match starts if you havent entered your predictions
+            Enable notifications to alert you before a match starts if you havent entered your predictions.
         </div>
         <div slot="actions">
             <Button on:click={enableNotifications}>Enable notifications</Button>
