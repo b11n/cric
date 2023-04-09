@@ -74,6 +74,8 @@ export const initFirebase = memoize(() => {
 
 
 
+
+
     return { app, analytics, auth, onAuthStateChanged, signIn,signOutFromApp }
 })
 
