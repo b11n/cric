@@ -7,7 +7,6 @@
 	import { initDatabase } from '../client/db';
 	import { get } from 'svelte/store';
 	import { auth as authStore } from '../store/auth';
-	import Tick from './tick.svelte';
 
 	let enableNotifications = () => {};
     let isRegisteredOnServer = false;
