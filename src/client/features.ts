@@ -19,9 +19,9 @@ export function isFeatureEnabled(featureName: string): Promise<boolean> {
 }
 
 function hasNotifications() {
-    if (!('Notification' in window)) {
+    if ('PushManager' in window) {
+        return true;
+      } else {
         return false;
-    }else{
-        return true
-    }
+      }
 }
