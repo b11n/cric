@@ -111,8 +111,23 @@ export const initDatabase = function () {
         }
     }
 
+    async function getTokenList(userId:string) {
+        const q = query(collection(db,"users"), where('userId', '==', userId) );
+        const querySnapshot = await getDocs(q);
+        if(querySnapshot.docs.length > 0) {
+            const user = querySnapshot.docs[0].data();
+            if(user.tokens){
+                return user.tokens
+            }else {
+                return [];
+            }
+        }else {
+            return [];
+        }
+    }
 
 
 
-    return { db, addPrediction,registerToken, getLatestPrediction,checkAndAddUser,getUserList,getUserBets,getFinalBets,getLeaderList,getFeatureUsers };
+
+    return { db, addPrediction,registerToken, getTokenList,getLatestPrediction,checkAndAddUser,getUserList,getUserBets,getFinalBets,getLeaderList,getFeatureUsers };
 }
