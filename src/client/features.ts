@@ -8,7 +8,7 @@ export function isFeatureEnabled(featureName: string): Promise<boolean> {
 
         authStore.subscribe(async (user) => {
            const users = await getFeatureUsers(featureName);
-           if(users && users.users.indexOf(user?.uid) >= 0 ){
+           if(users && users.users.indexOf(user?.uid) >= 0 && hasNotifications()){
             resolve(true);
            }else{
             resolve(false);
@@ -16,4 +16,12 @@ export function isFeatureEnabled(featureName: string): Promise<boolean> {
         })
     })
 
+}
+
+function hasNotifications() {
+    if (!('Notification' in window)) {
+        return false;
+    }else{
+        return true
+    }
 }
