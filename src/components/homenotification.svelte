@@ -30,12 +30,12 @@
 
 {#if showNofiticationAlert }
     <Alert>
-        <div slot="header">Enable notifications</div>
+        <div slot="header">Enable Notifications</div>
         <div slot="body">
             Enable notifications to alert you before a match starts if you havent entered your predictions.
         </div>
         <div slot="actions">
-            <Button on:click={enableNotifications}>Enable notifications</Button>
+            <Button on:click={enableNotifications}>Enable Notifications</Button>
         </div>
     </Alert>
 {/if}
