@@ -1,4 +1,4 @@
-import { addDoc, collection, getDocs, getFirestore, orderBy, query,arrayUnion,updateDoc,doc, serverTimestamp, where } from "firebase/firestore";
+import { addDoc, collection, getDocs,getDoc, getFirestore, orderBy, setDoc, query,arrayUnion,updateDoc,doc, serverTimestamp, where } from "firebase/firestore";
 
 import { initFirebase } from './firebase';
 
@@ -129,5 +129,18 @@ export const initDatabase = function () {
 
 
 
-    return { db, addPrediction,registerToken, getTokenList,getLatestPrediction,checkAndAddUser,getUserList,getUserBets,getFinalBets,getLeaderList,getFeatureUsers };
+    async function updatePref(userId:string, prefName: string, value: boolean) {
+        return await setDoc(doc(db, "prefs", userId), {showHomeNotification: value});
+    }
+
+    async function getPref(userId:string, prefName: string) {
+        const docRef = doc(db, "prefs", userId);
+       const val =  await getDoc(docRef);
+       return val.data()?.showHomeNotification;
+    }
+
+
+
+
+    return { db, addPrediction,registerToken,updatePref,getPref, getTokenList,getLatestPrediction,checkAndAddUser,getUserList,getUserBets,getFinalBets,getLeaderList,getFeatureUsers };
 }

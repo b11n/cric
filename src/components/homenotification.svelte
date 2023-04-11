@@ -9,6 +9,7 @@
 	import { auth as authStore } from '../store/auth';
 
 	let enableNotifications = () => {};
+    let dismissPrompt = () => {};
     let isRegisteredOnServer = false;
 	let showNofiticationAlert = false;
 
@@ -30,10 +31,15 @@
 
 	onMount(async () => {
 		const { getRegistrationToken } = initMessaging();
-		const { registerToken,getTokenList } = initDatabase();
+		const { registerToken,getTokenList,updatePref,getPref } = initDatabase();
         const user = get(authStore);
 
 		const isNotificationFeatureEnabled = await isFeatureEnabled('NOTIFICATION');
+        const isHomeNotificationEnabled = await getPref(user?.uid || '', 'NOTIFICATION_PROMPT');
+        if(!isHomeNotificationEnabled) {
+            showNofiticationAlert = false;
+            return;
+        }
         const registered = hasPermissionGranted();
 
         if(registered) {
@@ -46,6 +52,11 @@
             }
         }else {
             showNofiticationAlert = isNotificationFeatureEnabled;
+        }
+
+        dismissPrompt = async () => {
+            await updatePref(user?.uid || '', 'NOTIFICATION_PROMPT', false);
+            showNofiticationAlert = false;
         }
 
 		enableNotifications = async () => {
@@ -72,7 +83,11 @@
 			predictions.
 		</div>
 		<div slot="actions">
+
 			<Button on:click={enableNotifications}>Enable Notifications</Button>
+
+            <Button on:click={dismissPrompt}>Not interested</Button>
+
 		</div>
 	</Alert>
 {:else if isRegisteredOnServer }
