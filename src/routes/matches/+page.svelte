@@ -6,20 +6,21 @@
 	let choices = ['All', 'Upcoming', 'Past'];
 	let selected = 'All';
 
-	let selectedMatches = matches;
+	const matchWithIndex = matches.map((match, index)=>{return {...match, index};})
+
+	let selectedMatches = matchWithIndex;
 
 	function filter() {
 		setTimeout(function () {
 			const currentTime = new Date().getTime();
-			selectedMatches = matches.filter((match) => {
+			selectedMatches = matchWithIndex.filter((match) => {
+				const matchTime =  new Date(match.date + ' ' + match.time).getTime();
 				if (selected === null || selected === 'All') {
 					return true;
 				} else if (selected === 'Past') {
-					const retVal =  new Date(match.date + ' ' + match.time).getTime() <= currentTime;
-					return retVal;
+					return  matchTime <= currentTime;
 				} else {
-					console.log('upcoming');
-					return new Date(match.date + ' ' + match.time).getTime() > currentTime;
+					return matchTime > currentTime;
 				}
 			});
 			if(selected === 'Past') {
@@ -41,7 +42,7 @@
 
 <div class="match-list">
 	{#each selectedMatches as match, i}
-		<a href="/match/{i}">
+		<a href="/match/{match.index}">
 			<Match {match} condensed={true} />
 		</a>
 	{/each}
