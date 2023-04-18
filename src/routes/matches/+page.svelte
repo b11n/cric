@@ -1,14 +1,19 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { matches } from '../../../data/matches';
 	import Match from '../../components/match.svelte';
 	import Chip, { Set, Text } from '@smui/chips';
 
-	let choices = ['All', 'Upcoming', 'Past'];
-	let selected = 'All';
+	let choices = ['Upcoming', 'Past','All'];
+	let selected = 'Upcoming';
 
 	const matchWithIndex = matches.map((match, index)=>{return {...match, index};})
+	let selectedMatches = [];
 
-	let selectedMatches = matchWithIndex;
+	onMount(()=>{
+		filter();
+	});
+	
 
 	function filter() {
 		setTimeout(function () {
