@@ -1,1 +1,94 @@
-[{"name":" Shreyas Iyer (Captain) ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171024/shreyas-iyer.jpg"},{"name":" Mandeep Singh ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171093/mandeep-singh.jpg"},{"name":" Nitish Rana ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171047/nitish-rana.jpg"},{"name":" Rinku Singh ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c187877/rinku-singh.jpg"},{"name":" Venkatesh Iyer ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226278/venkatesh-iyer.jpg"},{"name":" Anukul Roy ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c153915/anukul-roy.jpg"},{"name":" Shakib Al Hasan ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244928/shakib-al-hasan.jpg"},{"name":" David Wiese ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244626/david-wiese.jpg"},{"name":" Andre Russell ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170821/andre-russell.jpg"},{"name":" N Jagadeesan ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/n-jagadeesan.jpg"},{"name":" Litton Das ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244922/litton-das.jpg"},{"name":" Rahmanullah Gurbaz ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244760/rahmanullah-gurbaz.jpg"},{"name":" Vaibhav Arora ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/vaibhav-arora.jpg"},{"name":" Lockie Ferguson ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244820/lockie-ferguson.jpg"},{"name":" Harshit Rana ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/harshit-rana.jpg"},{"name":" Kulwant Khejroliya ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/kulwant-khejroliya.jpg"},{"name":" Sunil Narine ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c152654/sunil-narine.jpg"},{"name":" Tim Southee ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244824/tim-southee.jpg"},{"name":" Suyash Sharma ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/suyash-sharma.jpg"},{"name":" Shardul Thakur ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226224/shardul-thakur.jpg"},{"name":" Varun Chakaravarthy ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226220/varun-chakaravarthy.jpg"},{"name":" Umesh Yadav ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c153874/umesh-yadav.jpg"}]
+[
+    {
+        "name": " Shreyas Iyer (Captain) ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171024/shreyas-iyer.jpg"
+    },
+    {
+        "name": " Mandeep Singh ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171093/mandeep-singh.jpg"
+    },
+    {
+        "name": " Nitish Rana ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171047/nitish-rana.jpg"
+    },
+    {
+        "name": " Rinku Singh ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c187877/rinku-singh.jpg"
+    },
+    {
+        "name": " Venkatesh Iyer ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226278/venkatesh-iyer.jpg"
+    },
+    {
+        "name": " Anukul Roy ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c153915/anukul-roy.jpg"
+    },
+    {
+        "name": " Shakib Al Hasan ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244928/shakib-al-hasan.jpg"
+    },
+    {
+        "name": " David Wiese ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244626/david-wiese.jpg"
+    },
+    {
+        "name": " Andre Russell ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170821/andre-russell.jpg"
+    },
+    {
+        "name": " N Jagadeesan ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/n-jagadeesan.jpg"
+    },
+    {
+        "name": " Litton Das ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244922/litton-das.jpg"
+    },
+    {
+        "name": " Rahmanullah Gurbaz ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244760/rahmanullah-gurbaz.jpg"
+    },
+    {
+        "name": " Vaibhav Arora ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/vaibhav-arora.jpg"
+    },
+    {
+        "name": " Lockie Ferguson ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244820/lockie-ferguson.jpg"
+    },
+    {
+        "name": " Harshit Rana ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/harshit-rana.jpg"
+    },
+    {
+        "name": " Kulwant Khejroliya ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/kulwant-khejroliya.jpg"
+    },
+    {
+        "name": " Sunil Narine ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c152654/sunil-narine.jpg"
+    },
+    {
+        "name": " Tim Southee ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244824/tim-southee.jpg"
+    },
+    {
+        "name": " Suyash Sharma ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/suyash-sharma.jpg"
+    },
+    {
+        "name": " Shardul Thakur ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226224/shardul-thakur.jpg"
+    },
+    {
+        "name": " Varun Chakaravarthy ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226220/varun-chakaravarthy.jpg"
+    },
+    {
+        "name": " Umesh Yadav ",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c153874/umesh-yadav.jpg"
+    },
+    {
+        "name": "Jason Roy",
+        "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c153874/umesh-yadav.jpg"
+    }
+]
