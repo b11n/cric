@@ -1040,7 +1040,7 @@ export const matches = [
     homeCode: 'PBKS'
   },
   {
-    date: '04-May-2023',
+    date: '03-May-2023',
     home: 'Lucknow Super Giants',
     away: 'Chennai Super Kings',
     venue: 'Lucknow',
