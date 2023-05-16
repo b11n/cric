@@ -1222,10 +1222,10 @@ export const matches = [
   {
     date: '19-May-2023',
     home: 'Punjab Kings',
-    away: 'Delhi Capitals',
+    away: 'Rajastan Royals',
     venue: 'Dharamshala',
     time: '19:30',
-    awayCode: 'DC',
+    awayCode: 'RR',
     homeCode: 'PBKS'
   },
   {
