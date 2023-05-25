@@ -1281,5 +1281,14 @@ export const matches = [
     time: '19:30',
     awayCode: 'MI',
     homeCode: 'LSG'
+  },
+  {
+    date: '26-May-2023',
+    home: 'Gujarat Titans',
+    away: 'Mumbai Indians',
+    venue: 'Chennai',
+    time: '19:30',
+    awayCode: 'MI',
+    homeCode: 'GT'
   }
 ]
