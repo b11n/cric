@@ -1290,5 +1290,14 @@ export const matches = [
     time: '19:30',
     awayCode: 'MI',
     homeCode: 'GT'
+  },
+  {
+    date: '28-May-2023',
+    home: 'Gujarat Titans',
+    away: 'Chennai Super Kings',
+    venue: 'Ahmedabad',
+    time: '19:30',
+    awayCode: 'CSK',
+    homeCode: 'GT'
   }
 ]
