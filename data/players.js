@@ -1,2 +1,1484 @@
-export const players = [{ "name": "Abhinav Manohar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/abhinav-manohar.jpg", "team": "GT" }, { "name": "David Miller", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244759/david-miller.jpg", "team": "GT" }, { "name": "Sai Sudharsan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/sai-sudharsan.jpg", "team": "GT" }, { "name": "Shubman Gill", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171042/shubman-gill.jpg", "team": "GT" }, { "name": "Kane Williamson", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244826/kane-williamson.jpg", "team": "GT" }, { "name": "Hardik Pandya (Captain)", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244973/hardik-pandya.jpg", "team": "GT" }, { "name": "Vijay Shankar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170664/vijay-shankar.jpg", "team": "GT" }, { "name": "Rahul Tewatia", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c196288/rahul-tewatia.jpg", "team": "GT" }, { "name": "Rashid Khan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244769/rashid-khan.jpg", "team": "GT" }, { "name": "Shivam Mavi", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c155147/shivam-mavi.jpg", "team": "GT" }, { "name": "Srikar Bharat", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226437/srikar-bharat.jpg", "team": "GT" }, { "name": "Urvil Patel", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/urvil-patel.jpg", "team": "GT" }, { "name": "Wriddhiman Saha", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171058/wriddhiman-saha.jpg", "team": "GT" }, { "name": "Matthew Wade", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244799/matthew-wade.jpg", "team": "GT" }, { "name": "Alzarri Joseph", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244661/alzarri-joseph.jpg", "team": "GT" }, { "name": "Joshua Little", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244649/joshua-little.jpg", "team": "GT" }, { "name": "Darshan Nalkande", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/darshan-nalkande.jpg", "team": "GT" }, { "name": "Mohammed Shami", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244977/mohammed-shami.jpg", "team": "GT" }, { "name": "Noor Ahmad", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226316/noor-ahmad.jpg", "team": "GT" }, { "name": "Ravisrinivasan Sai Kishore", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226507/ravisrinivasan-sai-kishore.jpg", "team": "GT" }, { "name": "Pradeep Sangwan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c153373/pradeep-sangwan.jpg", "team": "GT" }, { "name": "Mohit Sharma", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c192642/mohit-sharma.jpg", "team": "GT" }, { "name": "Odean Smith", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244724/odean-smith.jpg", "team": "GT" }, { "name": "Jayant Yadav", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226388/jayant-yadav.jpg", "team": "GT" }, { "name": "Yash Dayal", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/yash-dayal.jpg", "team": "GT" }, { "name": "Ruturaj Gaikwad", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226277/ruturaj-gaikwad.jpg", "team": "CSK" }, { "name": "Ajinkya Rahane", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171082/ajinkya-rahane.jpg", "team": "CSK" }, { "name": "Shaik Rasheed", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/shaik-rasheed.jpg", "team": "CSK" }, { "name": "Ambati Rayudu", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171012/ambati-rayudu.jpg", "team": "CSK" }, { "name": "Subhranshu Senapati", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/subhranshu-senapati.jpg", "team": "CSK" }, { "name": "Moeen Ali", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244796/moeen-ali.jpg", "team": "CSK" }, { "name": "Nishant Sindhu", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/nishant-sindhu.jpg", "team": "CSK" }, { "name": "Ben Stokes", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244791/ben-stokes.jpg", "team": "CSK" }, { "name": "Bhagath Varma", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/bhagath-varma.jpg", "team": "CSK" }, { "name": "Shivam Dube", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c183291/shivam-dube.jpg", "team": "CSK" }, { "name": "Ravindra Jadeja", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170670/ravindra-jadeja.jpg", "team": "CSK" }, { "name": "Dwaine Pretorius", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170695/dwaine-pretorius.jpg", "team": "CSK" }, { "name": "Mitchell Santner", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244828/mitchell-santner.jpg", "team": "CSK" }, { "name": "MS Dhoni (Captain) (Keeper)", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170677/ms-dhoni.jpg", "team": "CSK" }, { "name": "Devon Conway", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244818/devon-conway.jpg", "team": "CSK" }, { "name": "Deepak Chahar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226392/deepak-chahar.jpg", "team": "CSK" }, { "name": "Tushar Deshpande", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c190903/tushar-deshpande.jpg", "team": "CSK" }, { "name": "Rajvardhan Hangargekar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226294/rajvardhan-hangargekar.jpg", "team": "CSK" }, { "name": "Sisanda Magala", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226308/sisanda-magala.jpg", "team": "CSK" }, { "name": "Ajay Jadav Mandal", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/ajay-jadav-mandal.jpg", "team": "CSK" }, { "name": "Mukesh Choudhary", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/mukesh-choudhary.jpg", "team": "CSK" }, { "name": "Matheesha Pathirana", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226299/matheesha-pathirana.jpg", "team": "CSK" }, { "name": "Simarjeet Singh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/simarjeet-singh.jpg", "team": "CSK" }, { "name": "Prashant Solanki", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/prashant-solanki.jpg", "team": "CSK" }, { "name": "Maheesh Theekshana", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244668/maheesh-theekshana.jpg", "team": "CSK" }, { "name": "Shikhar Dhawan (Captain)", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170660/shikhar-dhawan.jpg", "team": "PBKS" }, { "name": "Harpreet Singh Bhatia", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c153367/harpreet-singh-bhatia.jpg", "team": "PBKS" }, { "name": "Liam Livingstone", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244797/liam-livingstone.jpg", "team": "PBKS" }, { "name": "Atharva Taide", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/atharva-taide.jpg", "team": "PBKS" }, { "name": "Sikandar Raza", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244709/sikandar-raza.jpg", "team": "PBKS" }, { "name": "Shahrukh Khan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226465/shahrukh-khan.jpg", "team": "PBKS" }, { "name": "Mohit Rathee", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/mohit-rathee.jpg", "team": "PBKS" }, { "name": "Harpreet Brar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226471/harpreet-brar.jpg", "team": "PBKS" }, { "name": "Sam Curran", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244812/sam-curran.jpg", "team": "PBKS" }, { "name": "Rishi Dhawan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c151723/rishi-dhawan.jpg", "team": "PBKS" }, { "name": "Baltej Singh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/baltej-singh.jpg", "team": "PBKS" }, { "name": "Shivam Singh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/shivam-singh.jpg", "team": "PBKS" }, { "name": "Jonny Bairstow", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170976/jonny-bairstow.jpg", "team": "PBKS" }, { "name": "Prabhsimran Singh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226515/prabhsimran-singh.jpg", "team": "PBKS" }, { "name": "Bhanuka Rajapaksa", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244846/bhanuka-rajapaksa.jpg", "team": "PBKS" }, { "name": "Jitesh Sharma", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226474/jitesh-sharma.jpg", "team": "PBKS" }, { "name": "Raj Bawa", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226295/raj-bawa.jpg", "team": "PBKS" }, { "name": "Kagiso Rabada", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244765/kagiso-rabada.jpg", "team": "PBKS" }, { "name": "Nathan Ellis", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226248/nathan-ellis.jpg", "team": "PBKS" }, { "name": "Vidhwath Kaverappa", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/vidhwath-kaverappa.jpg", "team": "PBKS" }, { "name": "Rahul Chahar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226225/rahul-chahar.jpg", "team": "PBKS" }, { "name": "Arshdeep Singh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244971/arshdeep-singh.jpg", "team": "PBKS" }, { "name": "Shreyas Iyer (Captain)", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171024/shreyas-iyer.jpg", "team": "KKR" }, { "name": "Mandeep Singh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171093/mandeep-singh.jpg", "team": "KKR" }, { "name": "Nitish Rana", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171047/nitish-rana.jpg", "team": "KKR" }, { "name": "Rinku Singh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c187877/rinku-singh.jpg", "team": "KKR" }, { "name": "Venkatesh Iyer", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226278/venkatesh-iyer.jpg", "team": "KKR" }, { "name": "Anukul Roy", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c153915/anukul-roy.jpg", "team": "KKR" }, { "name": "Shakib Al Hasan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244928/shakib-al-hasan.jpg", "team": "KKR" }, { "name": "David Wiese", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244626/david-wiese.jpg", "team": "KKR" }, { "name": "Andre Russell", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170821/andre-russell.jpg", "team": "KKR" }, { "name": "N Jagadeesan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/n-jagadeesan.jpg", "team": "KKR" }, { "name": "Litton Das", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244922/litton-das.jpg", "team": "KKR" }, { "name": "Rahmanullah Gurbaz", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244760/rahmanullah-gurbaz.jpg", "team": "KKR" }, { "name": "Vaibhav Arora", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/vaibhav-arora.jpg", "team": "KKR" }, { "name": "Lockie Ferguson", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244820/lockie-ferguson.jpg", "team": "KKR" }, { "name": "Harshit Rana", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/harshit-rana.jpg", "team": "KKR" }, { "name": "Kulwant Khejroliya", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/kulwant-khejroliya.jpg", "team": "KKR" }, { "name": "Sunil Narine", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c152654/sunil-narine.jpg", "team": "KKR" }, { "name": "Tim Southee", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244824/tim-southee.jpg", "team": "KKR" }, { "name": "Suyash Sharma", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/suyash-sharma.jpg", "team": "KKR" }, { "name": "Shardul Thakur", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226224/shardul-thakur.jpg", "team": "KKR" }, { "name": "Varun Chakaravarthy", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226220/varun-chakaravarthy.jpg", "team": "KKR" }, { "name": "Umesh Yadav", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c153874/umesh-yadav.jpg", "team": "KKR" }, { "name": "Manan Vohra", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226514/manan-vohra.jpg", "team": "LSG" }, { "name": "Prerak Mankad", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c169684/prerak-mankad.jpg", "team": "LSG" }, { "name": "Deepak Hooda", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244970/deepak-hooda.jpg", "team": "LSG" }, { "name": "Karan Sharma", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/karan-sharma.jpg", "team": "LSG" }, { "name": "Krunal Pandya", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171069/krunal-pandya.jpg", "team": "LSG" }, { "name": "Kyle Mayers", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244721/kyle-mayers.jpg", "team": "LSG" }, { "name": "Marcus Stoinis", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244801/marcus-stoinis.jpg", "team": "LSG" }, { "name": "Ayush Badoni", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/ayush-badoni.jpg", "team": "LSG" }, { "name": "Krishnappa Gowtham", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c156045/krishnappa-gowtham.jpg", "team": "LSG" }, { "name": "Daniel Sams", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c180315/daniel-sams.jpg", "team": "LSG" }, { "name": "Swapnil Singh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/swapnil-singh.jpg", "team": "LSG" }, { "name": "KL Rahul (Captain)", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244975/kl-rahul.jpg", "team": "LSG" }, { "name": "Quinton de Kock", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244766/quinton-de-kock.jpg", "team": "LSG" }, { "name": "Nicholas Pooran", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244722/nicholas-pooran.jpg", "team": "LSG" }, { "name": "Avesh Khan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226438/avesh-khan.jpg", "team": "LSG" }, { "name": "Mark Wood", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244802/mark-wood.jpg", "team": "LSG" }, { "name": "Ravi Bishnoi", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226280/ravi-bishnoi.jpg", "team": "LSG" }, { "name": "Jaydev Unadkat", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c169793/jaydev-unadkat.jpg", "team": "LSG" }, { "name": "Yash Thakur", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/yash-thakur.jpg", "team": "LSG" }, { "name": "Romario Shepherd", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226370/romario-shepherd.jpg", "team": "LSG" }, { "name": "Amit Mishra", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c153362/amit-mishra.jpg", "team": "LSG" }, { "name": "Naveen-ul-Haq", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244764/naveen-ul-haq.jpg", "team": "LSG" }, { "name": "Yudhvir Singh Charak", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/yudhvir-singh-charak.jpg", "team": "LSG" }, { "name": "Mohsin Khan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/mohsin-khan.jpg", "team": "LSG" }, { "name": "Mayank Yadav", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/mayank-yadav.jpg", "team": "LSG" }, { "name": "Yash Dhull", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226296/yash-dhull.jpg", "team": "DC" }, { "name": "Sarfaraz Khan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c153421/sarfaraz-khan.jpg", "team": "DC" }, { "name": "Manish Pandey", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171022/manish-pandey.jpg", "team": "DC" }, { "name": "Rovman Powell", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244832/rovman-powell.jpg", "team": "DC" }, { "name": "Rilee Rossouw", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244768/rilee-rossouw.jpg", "team": "DC" }, { "name": "Prithvi Shaw", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171030/prithvi-shaw.jpg", "team": "DC" }, { "name": "David Warner (Captain)", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244788/david-warner.jpg", "team": "DC" }, { "name": "Lalit Yadav", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226516/lalit-yadav.jpg", "team": "DC" }, { "name": "Mitchell Marsh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244805/mitchell-marsh.jpg", "team": "DC" }, { "name": "Ripal Patel", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226523/ripal-patel.jpg", "team": "DC" }, { "name": "Axar Patel", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244972/axar-patel.jpg", "team": "DC" }, { "name": "Rishabh Pant", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244978/rishabh-pant.jpg", "team": "DC" }, { "name": "Philip Salt", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244804/philip-salt.jpg", "team": "DC" }, { "name": "Khaleel Ahmed", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171017/khaleel-ahmed.jpg", "team": "DC" }, { "name": "Aman Hakim Khan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/aman-hakim-khan.jpg", "team": "DC" }, { "name": "Praveen Dubey", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c195872/praveen-dubey.jpg", "team": "DC" }, { "name": "Kuldeep Yadav", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170683/kuldeep-yadav.jpg", "team": "DC" }, { "name": "Mukesh Kumar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/mukesh-kumar.jpg", "team": "DC" }, { "name": "Mustafizur Rahman", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244924/mustafizur-rahman.jpg", "team": "DC" }, { "name": "Kamlesh Nagarkoti", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226313/kamlesh-nagarkoti.jpg", "team": "DC" }, { "name": "Lungi Ngidi", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244772/lungi-ngidi.jpg", "team": "DC" }, { "name": "Anrich Nortje", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244754/anrich-nortje.jpg", "team": "DC" }, { "name": "Vicky Ostwal", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226291/vicky-ostwal.jpg", "team": "DC" }, { "name": "Chetan Sakariya", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c169708/chetan-sakariya.jpg", "team": "DC" }, { "name": "Ishant Sharma", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c154520/ishant-sharma.jpg", "team": "DC" }, { "name": "Abdul Samad", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226276/abdul-samad.jpg", "team": "SRH" }, { "name": "Mayank Agarwal", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171091/mayank-agarwal.jpg", "team": "SRH" }, { "name": "Anmolpreet Singh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c179867/anmolpreet-singh.jpg", "team": "SRH" }, { "name": "Harry Brook", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244815/harry-brook.jpg", "team": "SRH" }, { "name": "Aiden Markram (Captain)", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244757/aiden-markram.jpg", "team": "SRH" }, { "name": "Nitish Reddy", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/nitish-reddy.jpg", "team": "SRH" }, { "name": "Rahul Tripathi", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226470/rahul-tripathi.jpg", "team": "SRH" }, { "name": "Samarth Vyas", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c169691/samarth-vyas.jpg", "team": "SRH" }, { "name": "Sanvir Singh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/sanvir-singh.jpg", "team": "SRH" }, { "name": "Vivrant Sharma", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/vivrant-sharma.jpg", "team": "SRH" }, { "name": "Washington Sundar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171035/washington-sundar.jpg", "team": "SRH" }, { "name": "Abhishek Sharma", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c153963/abhishek-sharma.jpg", "team": "SRH" }, { "name": "Marco Jansen", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244774/marco-jansen.jpg", "team": "SRH" }, { "name": "Heinrich Klaasen", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244761/heinrich-klaasen.jpg", "team": "SRH" }, { "name": "Glenn Phillips", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244817/glenn-phillips.jpg", "team": "SRH" }, { "name": "Upendra Yadav", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/upendra-yadav.jpg", "team": "SRH" }, { "name": "Akeal Hosein", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244660/akeal-hosein.jpg", "team": "SRH" }, { "name": "Mayank Dagar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/mayank-dagar.jpg", "team": "SRH" }, { "name": "Fazalhaq Farooqi", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226317/fazalhaq-farooqi.jpg", "team": "SRH" }, { "name": "Kartik Tyagi", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226311/kartik-tyagi.jpg", "team": "SRH" }, { "name": "Bhuvneshwar Kumar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244967/bhuvneshwar-kumar.jpg", "team": "SRH" }, { "name": "Mayank Markande", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226510/mayank-markande.jpg", "team": "SRH" }, { "name": "T Natarajan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c198676/t-natarajan.jpg", "team": "SRH" }, { "name": "Adil Rashid", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244789/adil-rashid.jpg", "team": "SRH" }, { "name": "Umran Malik", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226275/umran-malik.jpg", "team": "SRH" }, { "name": "Shimron Hetmyer", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171232/shimron-hetmyer.jpg", "team": "RR" }, { "name": "Yashasvi Jaiswal", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226279/yashasvi-jaiswal.jpg", "team": "RR" }, { "name": "Devdutt Padikkal", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c195763/devdutt-padikkal.jpg", "team": "RR" }, { "name": "Riyan Parag", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c156160/riyan-parag.jpg", "team": "RR" }, { "name": "Kunal Singh Rathore", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/kunal-singh-rathore.jpg", "team": "RR" }, { "name": "Joe Root", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170942/joe-root.jpg", "team": "RR" }, { "name": "Abdul Basith", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/abdul-basith.jpg", "team": "RR" }, { "name": "Ravichandran Ashwin", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244976/ravichandran-ashwin.jpg", "team": "RR" }, { "name": "Jason Holder", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244677/jason-holder.jpg", "team": "RR" }, { "name": "Sanju Samson (Captain)", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226289/sanju-samson.jpg", "team": "RR" }, { "name": "Jos Buttler", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244800/jos-buttler.jpg", "team": "RR" }, { "name": "Donavon Ferreira", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/donavon-ferreira.jpg", "team": "RR" }, { "name": "Dhruv Jurel", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226551/dhruv-jurel.jpg", "team": "RR" }, { "name": "Murugan Ashwin", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226412/murugan-ashwin.jpg", "team": "RR" }, { "name": "KM Asif", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226409/km-asif.jpg", "team": "RR" }, { "name": "Trent Boult", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244829/trent-boult.jpg", "team": "RR" }, { "name": "KC Cariappa", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226502/kc-cariappa.jpg", "team": "RR" }, { "name": "Yuzvendra Chahal", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244981/yuzvendra-chahal.jpg", "team": "RR" }, { "name": "Obed McCoy", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244723/obed-mccoy.jpg", "team": "RR" }, { "name": "Navdeep Saini", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226400/navdeep-saini.jpg", "team": "RR" }, { "name": "Kuldeep Sen", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/kuldeep-sen.jpg", "team": "RR" }, { "name": "Akash Vasisht", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/akash-vasisht.jpg", "team": "RR" }, { "name": "Kuldip Yadav", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/kuldip-yadav.jpg", "team": "RR" }, { "name": "Adam Zampa", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244782/adam-zampa.jpg", "team": "RR" }, { "name": "Faf du Plessis (Captain)", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170639/faf-du-plessis.jpg", "team": "RCB" }, { "name": "Virat Kohli", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244980/virat-kohli.jpg", "team": "RCB" }, { "name": "Rajat Patidar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c234983/rajat-patidar.jpg", "team": "RCB" }, { "name": "Suyash Prabhudessai", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/suyash-prabhudessai.jpg", "team": "RCB" }, { "name": "Manoj Bhandage", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/manoj-bhandage.jpg", "team": "RCB" }, { "name": "Mahipal Lomror", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226541/mahipal-lomror.jpg", "team": "RCB" }, { "name": "Glenn Maxwell", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244786/glenn-maxwell.jpg", "team": "RCB" }, { "name": "Michael Bracewell", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244823/michael-bracewell.jpg", "team": "RCB" }, { "name": "Wanindu Hasaranga", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244676/wanindu-hasaranga.jpg", "team": "RCB" }, { "name": "Shahbaz Ahmed", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226473/shahbaz-ahmed.jpg", "team": "RCB" }, { "name": "David Willey", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244795/david-willey.jpg", "team": "RCB" }, { "name": "Finn Allen", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244814/finn-allen.jpg", "team": "RCB" }, { "name": "Anuj Rawat", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226472/anuj-rawat.jpg", "team": "RCB" }, { "name": "Dinesh Karthik", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244969/dinesh-karthik.jpg", "team": "RCB" }, { "name": "Akash Deep", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/akash-deep.jpg", "team": "RCB" }, { "name": "Avinash Singh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/avinash-singh.jpg", "team": "RCB" }, { "name": "Josh Hazlewood", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244790/josh-hazlewood.jpg", "team": "RCB" }, { "name": "Siddarth Kaul", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c192649/siddarth-kaul.jpg", "team": "RCB" }, { "name": "Mohammed Siraj", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171039/mohammed-siraj.jpg", "team": "RCB" }, { "name": "Harshal Patel", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244974/harshal-patel.jpg", "team": "RCB" }, { "name": "Rajan Kumar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/rajan-kumar.jpg", "team": "RCB" }, { "name": "Himanshu Sharma", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/himanshu-sharma.jpg", "team": "RCB" }, { "name": "Karn Sharma", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226391/karn-sharma.jpg", "team": "RCB" }, { "name": "Sonu Yadav", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/sonu-yadav.jpg", "team": "RCB" }, { "name": "Reece Topley", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244807/reece-topley.jpg", "team": "RCB" }, { "name": "Rohit Sharma (Captain)", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244982/rohit-sharma.jpg", "team": "MI" }, { "name": "Dewald Brevis", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226302/dewald-brevis.jpg", "team": "MI" }, { "name": "Ramandeep Singh", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/ramandeep-singh.jpg", "team": "MI" }, { "name": "Tilak Varma", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226525/tilak-varma.jpg", "team": "MI" }, { "name": "Nehal Wadhera", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/nehal-wadhera.jpg", "team": "MI" }, { "name": "Suryakumar Yadav", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244979/suryakumar-yadav.jpg", "team": "MI" }, { "name": "Tim David", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244810/tim-david.jpg", "team": "MI" }, { "name": "Shams Mulani", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/shams-mulani.jpg", "team": "MI" }, { "name": "Piyush Chawla", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c152613/piyush-chawla.jpg", "team": "MI" }, { "name": "Cameron Green", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c198706/cameron-green.jpg", "team": "MI" }, { "name": "Kumar Kartikeya", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/kumar-kartikeya.jpg", "team": "MI" }, { "name": "Hrithik Shokeen", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/hrithik-shokeen.jpg", "team": "MI" }, { "name": "Arjun Tendulkar", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c154048/arjun-tendulkar.jpg", "team": "MI" }, { "name": "Ishan Kishan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226219/ishan-kishan.jpg", "team": "MI" }, { "name": "Tristan Stubbs", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244778/tristan-stubbs.jpg", "team": "MI" }, { "name": "Vishnu Vinod", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/vishnu-vinod.jpg", "team": "MI" }, { "name": "Jofra Archer", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170970/jofra-archer.jpg", "team": "MI" }, { "name": "Arshad Khan", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/arshad-khan.jpg", "team": "MI" }, { "name": "Jason Behrendorff", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170647/jason-behrendorff.jpg", "team": "MI" }, { "name": "Jasprit Bumrah", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170685/jasprit-bumrah.jpg", "team": "MI" }, { "name": "Raghav Goyal", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/raghav-goyal.jpg", "team": "MI" }, { "name": "Duan Jansen", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226385/duan-jansen.jpg", "team": "MI" }, { "name": "Akash Madhwal", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/akash-madhwal.jpg", "team": "MI" }, { "name": "Jhye Richardson", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c156047/jhye-richardson.jpg", "team": "MI" },
-{ "name": "Jason Roy", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c156047/jhye-richardson.jpg", "team": "KKR" }];
+export const players = [
+    {
+      "team": "LSG",
+      "name": "Deepak Hooda",
+      "role": "All-rounder",
+      "price": "INR 5.75 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Ayush Badoni",
+      "role": "Batter",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "LSG",
+      "name": "Kyle Mayers",
+      "role": "All-rounder",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "LSG",
+      "name": "Naveen Ul Haq",
+      "role": "Bowler",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "LSG",
+      "name": "Prerak Mankad",
+      "role": "All-rounder",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "LSG",
+      "name": "Marcus Stoinis",
+      "role": "All-rounder",
+      "price": "INR 9.2 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Krishnappa Gowtham",
+      "role": "All-rounder",
+      "price": "INR 90 lakh"
+    },
+    {
+      "team": "LSG",
+      "name": "Krunal Pandya",
+      "role": "All-rounder",
+      "price": "INR 8.25 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Yash Thakur",
+      "role": "Bowler",
+      "price": "INR 45 lakh"
+    },
+    {
+      "team": "LSG",
+      "name": "Amit Mishra",
+      "role": "Bowler",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "LSG",
+      "name": "Mark Wood",
+      "role": "Bowler",
+      "price": "INR 7.5 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Ravi Bishnoi",
+      "role": "Bowler",
+      "price": "INR 4 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Mohsin Khan",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "LSG",
+      "name": "Mayank Yadav",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "LSG",
+      "name": "Quinton De Kock",
+      "role": "Wicketkeeper",
+      "price": "INR 6.75 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Nicholas Pooran",
+      "role": "Wicketkeeper",
+      "price": "INR 16 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Kl Rahul",
+      "role": "Wicketkeeper",
+      "price": "INR 17 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Devdutt Padikkal",
+      "role": "Batter",
+      "price": "INR 7.75 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Ashton Turner",
+      "role": "Batter",
+      "price": "INR 1 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Yudhvir Singh",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "LSG",
+      "name": "David Willey",
+      "role": "All-rounder",
+      "price": "INR 2 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Arshin Kulkarni",
+      "role": "All-rounder",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "LSG",
+      "name": "Shivam Mavi",
+      "role": "Bowler",
+      "price": "INR 6.4 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Manimaran Siddarth",
+      "role": "Bowler",
+      "price": "INR 2.4 crore"
+    },
+    {
+      "team": "LSG",
+      "name": "Arshad Khan",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "RCB",
+      "name": "Faf Du Plessis",
+      "role": "Batter",
+      "price": "INR 7 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Virat Kohli",
+      "role": "Batter",
+      "price": "INR 15 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Rajat Patidar",
+      "role": "Batter",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "RCB",
+      "name": "Anuj Rawat",
+      "role": "Wicketkeeper",
+      "price": "INR 3.4 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Dinesh Karthik",
+      "role": "Wicketkeeper",
+      "price": "INR 5.5 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Glenn Maxwell",
+      "role": "All-rounder",
+      "price": "INR 11 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Cameron Green",
+      "role": "All-rounder",
+      "price": "INR 17.5 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Suyash S Prabhudessai",
+      "role": "All-rounder",
+      "price": "INR 30 lakh"
+    },
+    {
+      "team": "RCB",
+      "name": "Will Jacks",
+      "role": "All-rounder",
+      "price": "INR 3.2 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Mahipal Lomror",
+      "role": "All-rounder",
+      "price": "INR 95 lakh"
+    },
+    {
+      "team": "RCB",
+      "name": "Manoj Bhandage",
+      "role": "All-rounder",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "RCB",
+      "name": "Akash Deep",
+      "role": "All-rounder",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "RCB",
+      "name": "Karn Sharma",
+      "role": "Bowler",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "RCB",
+      "name": "Mayank Dagar",
+      "role": "Bowler",
+      "price": "INR 1.8 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Mohammed Siraj",
+      "role": "Bowler",
+      "price": "INR 7 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Reece Topley",
+      "role": "Bowler",
+      "price": "INR 1.9 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Himanshu Sharma",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "RCB",
+      "name": "Vijaykumar Vyshak",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "RCB",
+      "name": "Alzarri Joseph",
+      "role": "Bowler",
+      "price": "INR 11.5 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Saurav Chauhan",
+      "role": "Batter",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "RCB",
+      "name": "Swapnil Singh",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "RCB",
+      "name": "Lockie Ferguson",
+      "role": "Bowler",
+      "price": "INR 2 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Tom Curran",
+      "role": "Bowler",
+      "price": "INR 1.5 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Yash Dayal",
+      "role": "Bowler",
+      "price": "INR 5 crore"
+    },
+    {
+      "team": "RCB",
+      "name": "Sonu Yadav",
+      "role": "All-rounder",
+      "price": "INR 20 lakhs"
+    },
+    {
+      "team": "KKR",
+      "name": "Andre Russell",
+      "role": "All-rounder",
+      "price": "INR 12 crore"
+    },
+    {
+      "team": "KKR",
+      "name": "Venkatesh Iyer",
+      "role": "All-rounder",
+      "price": "INR 8 crore"
+    },
+    {
+      "team": "KKR",
+      "name": "Sunil Narine",
+      "role": "All-rounder",
+      "price": "INR 6 crore"
+    },
+    {
+      "team": "KKR",
+      "name": "Anukul Roy",
+      "role": "All-rounder",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "KKR",
+      "name": "Nitish Rana",
+      "role": "All-rounder",
+      "price": "INR 60 lakh"
+    },
+    {
+      "team": "KKR",
+      "name": "Vaibhav Arora",
+      "role": "Bowler",
+      "price": "INR 9.2 crore"
+    },
+    {
+      "team": "KKR",
+      "name": "Shreyas Iyer",
+      "role": "Batter",
+      "price": "INR 12.25 crore"
+    },
+    {
+      "team": "KKR",
+      "name": "Rinku Singh",
+      "role": "Batter",
+      "price": "INR 55 lakh"
+    },
+    {
+      "team": "KKR",
+      "name": "Harshit Rana",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "KKR",
+      "name": "Varun Chakaravarthy",
+      "role": "Bowler",
+      "price": "INR 8 crore"
+    },
+    {
+      "team": "KKR",
+      "name": "Suyash Sharma",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "KKR",
+      "name": "Mitchell Starc",
+      "role": "Bowler",
+      "price": "INR 24.75 crore"
+    },
+    {
+      "team": "KKR",
+      "name": "Chetan Sakariya",
+      "role": "Bowler",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "KKR",
+      "name": "Ramandeep Singh",
+      "role": "All-rounder",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "KKR",
+      "name": "Srikar Bharat",
+      "role": "Wicketkeeper",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "KKR",
+      "name": "Jason Roy",
+      "role": "Batter",
+      "price": "INR 1.5 crore"
+    },
+    {
+      "team": "KKR",
+      "name": "Rahmanullah Gurbaz",
+      "role": "Wicketkeeper",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "KKR",
+      "name": "Angkrish Raghuvanshi",
+      "role": "Batter",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "KKR",
+      "name": "Manish Pandey",
+      "role": "Batter",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "KKR",
+      "name": "Sherfane Rutherford",
+      "role": "Batter",
+      "price": "INR 1.5 crore"
+    },
+    {
+      "team": "KKR",
+      "name": "Mujeeb ur Rahman",
+      "role": "Bowler",
+      "price": "INR 2 crore"
+    },
+    {
+      "team": "KKR",
+      "name": "Gus Atkinson",
+      "role": "Bowler",
+      "price": "INR 1 crore"
+    },
+    {
+      "team": "KKR",
+      "name": "Sakib Hussain",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "SRH",
+      "name": "Mayank Agarwal",
+      "role": "Batsman",
+      "price": "INR 8.25 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Heinrich Klaasen",
+      "role": "WIcketkeeper Batsman",
+      "price": "INR 5.25 crores"
+    },
+    {
+      "team": "SRH",
+      "name": "Travis Head",
+      "role": "Batsman",
+      "price": "INR 6.80 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Mayank Markande",
+      "role": "Bowler",
+      "price": "INR 50 lakhs"
+    },
+    {
+      "team": "SRH",
+      "name": "Wanindu Hasaranga",
+      "role": "Allrounder",
+      "price": "INR 1.50 Crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Sanvir Singh",
+      "role": "Bowler",
+      "price": "INR 20 Lakhs"
+    },
+    {
+      "team": "SRH",
+      "name": "Nitish Reddy",
+      "role": "Wicketkeeper Batsman",
+      "price": "INR 20 lakhs"
+    },
+    {
+      "team": "SRH",
+      "name": "Upendra Yadav",
+      "role": "Wicketkeeper Batsman",
+      "price": "INR 25 Lakhs"
+    },
+    {
+      "team": "SRH",
+      "name": "Shahbaz Ahmed",
+      "role": "Allrounder",
+      "price": "INR 2.40 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Pat Cummins",
+      "role": "Allrounder",
+      "price": "INR 20.50 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Anmolpreet Singh",
+      "role": "Batsman",
+      "price": "INR 20 lakhs"
+    },
+    {
+      "team": "SRH",
+      "name": "Akash Singh",
+      "role": "Bowler",
+      "price": "INR 20 Lakhs"
+    },
+    {
+      "team": "SRH",
+      "name": "Abdul Samad",
+      "role": "Batsman",
+      "price": "INR 4 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Abhishek Sharma",
+      "role": "Allrounder",
+      "price": "INR 6.5 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Fazalhaq Farooqi",
+      "role": "Bowler",
+      "price": "INR 50 lakhs"
+    },
+    {
+      "team": "SRH",
+      "name": "Marco Jansen",
+      "role": "Bowling Allrounder",
+      "price": "INR 4.20 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Jaydev Unadkat",
+      "role": "Bowler",
+      "price": "INR 1.60 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Bhuvneshwar Kumar",
+      "role": "Bowler",
+      "price": "INR 4.20 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Aiden Markram",
+      "role": "Batsman",
+      "price": "INR 2.6 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "T Natarajan",
+      "role": "Bowler",
+      "price": "INR 4 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Glenn Phillips",
+      "role": "Wicketkeeper Batsman",
+      "price": "INR 1.5 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Rahul Tripathi",
+      "role": "Batsman",
+      "price": "INR 8.5 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Washington Sundar",
+      "role": "Bowling Allrounder",
+      "price": "INR 8.75 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Umran Malik",
+      "role": "Bowler",
+      "price": "INR 4 crore"
+    },
+    {
+      "team": "SRH",
+      "name": "Jhatavedh Subramanyan",
+      "role": "Bowler",
+      "price": "INR 20 Lakhs"
+    },
+    {
+      "team": "PBKS",
+      "name": "Rishi Dhawan",
+      "role": "All-rounder",
+      "price": "INR 55 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Sam Curran",
+      "role": "All-rounder",
+      "price": "INR 18.5 crore"
+    },
+    {
+      "team": "PBKS",
+      "name": "Shivam Singh",
+      "role": "All-rounder",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Sikandar Raza",
+      "role": "All-rounder",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Atharva Taide",
+      "role": "All-rounder",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Liam Livingstone",
+      "role": "All-rounder",
+      "price": "INR 11.5 crore"
+    },
+    {
+      "team": "PBKS",
+      "name": "Shikhar Dhawan",
+      "role": "Batter",
+      "price": "INR 8.25 crore"
+    },
+    {
+      "team": "PBKS",
+      "name": "Harpreet Singh Bhatia",
+      "role": "Batter",
+      "price": "INR 40 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Harpreet Brar",
+      "role": "Bowler",
+      "price": "INR 3.8 crore"
+    },
+    {
+      "team": "PBKS",
+      "name": "Rahul Chahar",
+      "role": "Bowler",
+      "price": "INR 5.25 crore"
+    },
+    {
+      "team": "PBKS",
+      "name": "Nathan Ellis",
+      "role": "Bowler",
+      "price": "INR 75 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Kagiso Rabada",
+      "role": "Bowler",
+      "price": "INR 9.25 crore"
+    },
+    {
+      "team": "PBKS",
+      "name": "Vidwath Kaverappa",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Arshdeep Singh",
+      "role": "Bowler",
+      "price": "INR 4 crore"
+    },
+    {
+      "team": "PBKS",
+      "name": "Prabhsimran Singh",
+      "role": "Wicketkeeper",
+      "price": "INR 60 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Jitesh Sharma",
+      "role": "Wicketkeeper",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Jonny Bairstow",
+      "role": "Wicketkeeper",
+      "price": "INR 6.75 crore"
+    },
+    {
+      "team": "PBKS",
+      "name": "Harshal Patel",
+      "role": "Bowler",
+      "price": "INR 11.75 crore"
+    },
+    {
+      "team": "PBKS",
+      "name": "Chris Woakes",
+      "role": "All-rounder",
+      "price": "INR 4.2 crore"
+    },
+    {
+      "team": "PBKS",
+      "name": "Rilee Rossouw",
+      "role": "Batter",
+      "price": "INR 8 crore"
+    },
+    {
+      "team": "PBKS",
+      "name": "Shashank Singh",
+      "role": "Batter",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Ashutosh Sharma",
+      "role": "All-rounder",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Vishwanath Singh",
+      "role": "All-rounder",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Tanay Thyagarajan",
+      "role": "All-rounder",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "PBKS",
+      "name": "Prince Choudhry",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "GT",
+      "name": "B. Sai Sudharsan",
+      "role": "Batter",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "GT",
+      "name": "Shubman Gill",
+      "role": "Batter",
+      "price": "INR 8 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Rashid Khan",
+      "role": "All-rounder",
+      "price": "INR 15 crore"
+    },
+    {
+      "team": "GT",
+      "name": "David Miller",
+      "role": "Batter",
+      "price": "INR 3 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Rahul Tewatia",
+      "role": "All-rounder",
+      "price": "INR 9 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Matthew Wade",
+      "role": "Wicketkeeper",
+      "price": "INR 2.4 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Vijay Shankar",
+      "role": "All-rounder",
+      "price": "INR 1.4 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Mohammed Shami",
+      "role": "Bowler",
+      "price": "INR 6.25 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Wriddhiman Saha",
+      "role": "Wicketkeeper",
+      "price": "INR 1.9 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Jayant Yadav",
+      "role": "All-rounder",
+      "price": "INR 1.7 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Abhinav Manohar",
+      "role": "Bowler",
+      "price": "INR 2.6 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Sai Kishore",
+      "role": "Bowler",
+      "price": "INR 3 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Kane Williamson",
+      "role": "Batter",
+      "price": "INR 2 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Darshan Nalkande",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "GT",
+      "name": "Noor Ahmad",
+      "role": "Bowler",
+      "price": "INR 30 lakh"
+    },
+    {
+      "team": "GT",
+      "name": "Josh Little",
+      "role": "Bowler",
+      "price": "INR 4.4 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Mohit Sharma",
+      "role": "Bowler",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "GT",
+      "name": "Umesh Yadav",
+      "role": "Bowler",
+      "price": "INR 5.8 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Sushant Mishra",
+      "role": "Bowler",
+      "price": "INR 2.2 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Kartik Tyagi",
+      "role": "Bowler",
+      "price": "INR 60 lakh"
+    },
+    {
+      "team": "GT",
+      "name": "Manav Suthar",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "GT",
+      "name": "Azmatullah Omarzai",
+      "role": "All-rounder",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "GT",
+      "name": "Shahrukh Khan",
+      "role": "All-rounder",
+      "price": "INR 7.4 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Robin Minz",
+      "role": "Wicketkeeper",
+      "price": "INR 3.6 crore"
+    },
+    {
+      "team": "GT",
+      "name": "Spencer Johnson",
+      "role": "Bowler",
+      "price": "INR 10 crore"
+    },
+    {
+      "team": "MI",
+      "name": "Hardik Pandya",
+      "role": "All-rounder",
+      "price": "₹ 15 crore"
+    },
+    {
+      "team": "MI",
+      "name": "Rohit Sharma",
+      "role": "Batter",
+      "price": "₹ 16 crore"
+    },
+    {
+      "team": "MI",
+      "name": "Suryakumar Yadav",
+      "role": "Batter",
+      "price": "₹ 8 crore"
+    },
+    {
+      "team": "MI",
+      "name": "Tim David",
+      "role": "Batter",
+      "price": "₹ 8.25 crore"
+    },
+    {
+      "team": "MI",
+      "name": "Ishan Kishan",
+      "role": "Wicket-keeper",
+      "price": "₹ 15.25 crore"
+    },
+    {
+      "team": "MI",
+      "name": "Dewald Brevis",
+      "role": "Batter",
+      "price": "₹ 3 crore"
+    },
+    {
+      "team": "MI",
+      "name": "N. Tilak Varma",
+      "role": "Batter",
+      "price": "₹ 1.70 crore"
+    },
+    {
+      "team": "MI",
+      "name": "Shreyas Gopal",
+      "role": "Bowler",
+      "price": "₹ 20 lakhs"
+    },
+    {
+      "team": "MI",
+      "name": "Romario Shepherd",
+      "role": "All-rounder",
+      "price": "₹ 50 lakhs"
+    },
+    {
+      "team": "MI",
+      "name": "Arjun Tendulkar",
+      "role": "All-rounder",
+      "price": "₹ 30 lakhs"
+    },
+    {
+      "team": "MI",
+      "name": "Jason Behrendorff",
+      "role": "Bowler",
+      "price": "₹ 75 lakhs"
+    },
+    {
+      "team": "MI",
+      "name": "Kumar Kartikeya Singh",
+      "role": "Bowler",
+      "price": "₹ 20 lakhs"
+    },
+    {
+      "team": "MI",
+      "name": "Akash Madhwal",
+      "role": "Bowler",
+      "price": "₹ 20 lakhs"
+    },
+    {
+      "team": "MI",
+      "name": "Jasprit Bumrah",
+      "role": "Bowler",
+      "price": "₹ 12 crore"
+    },
+    {
+      "team": "MI",
+      "name": "Vishnu Vinod",
+      "role": "Wicket-keeper",
+      "price": "₹ 20 lakhs"
+    },
+    {
+      "team": "MI",
+      "name": "Gerald Coetzee",
+      "role": "Bowler",
+      "price": "₹ 5.00 crore"
+    },
+    {
+      "team": "MI",
+      "name": "Nehal Wadhera",
+      "role": "Batter",
+      "price": "₹ 20 lakhs"
+    },
+    {
+      "team": "MI",
+      "name": "Piyush Chawla",
+      "role": "Bowler",
+      "price": "₹ 50 lakhs"
+    },
+    {
+      "team": "MI",
+      "name": "Dilshan Madushanka",
+      "role": "Bowler",
+      "price": "₹ 4.60 crore"
+    },
+    {
+      "team": "MI",
+      "name": "Shams Mulani",
+      "role": "Bowler",
+      "price": "₹ 20 lakhs"
+    },
+    {
+      "team": "MI",
+      "name": "Nuwan Thusara",
+      "role": "Bowler",
+      "price": "₹ 4.80 crore"
+    },
+    {
+      "team": "MI",
+      "name": "Anshul Kamboj",
+      "role": "Bowler",
+      "price": "₹20 lakhs"
+    },
+    {
+      "team": "MI",
+      "name": "Mohammad Nabi",
+      "role": "All-rounder",
+      "price": "₹1.50 crore"
+    },
+    {
+      "team": "MI",
+      "name": "Shivalik Sharma",
+      "role": "All-rounder",
+      "price": "₹ 20 Lakhs"
+    },
+    {
+      "team": "CSK",
+      "name": "Ms Dhoni",
+      "role": "Batsman-wicket-keeper",
+      "price": "INR 12 crores"
+    },
+    {
+      "team": "CSK",
+      "name": "Ravindra Jadeja",
+      "role": "All-rounder",
+      "price": "INR 16 crores"
+    },
+    {
+      "team": "CSK",
+      "name": "Rachin Ravindra",
+      "role": "All-rounder",
+      "price": "INR 1.80 crore"
+    },
+    {
+      "team": "CSK",
+      "name": "Ruturaj Gaikwad",
+      "role": "Batsman",
+      "price": "INR 6 crores"
+    },
+    {
+      "team": "CSK",
+      "name": "Shardul Thakur",
+      "role": "All-rounder",
+      "price": "INR 4.00 crore"
+    },
+    {
+      "team": "CSK",
+      "name": "Deepak Chahar",
+      "role": "Bowler",
+      "price": "INR 14 crores"
+    },
+    {
+      "team": "CSK",
+      "name": "Devon Conway",
+      "role": "Batsman",
+      "price": "INR 6 crores"
+    },
+    {
+      "team": "CSK",
+      "name": "Daryl Mitchell",
+      "role": "All-rounder",
+      "price": "INR 1.80 crore"
+    },
+    {
+      "team": "CSK",
+      "name": "Maheesh Theekshana",
+      "role": "Bowler",
+      "price": "INR 70 Lakhs"
+    },
+    {
+      "team": "CSK",
+      "name": "Matheesha Pathirana",
+      "role": "Bowler",
+      "price": "INR 20 Lakhs"
+    },
+    {
+      "team": "CSK",
+      "name": "Mitchell Santner",
+      "role": "All-rounder",
+      "price": "INR 1.9 crores"
+    },
+    {
+      "team": "CSK",
+      "name": "Moeen Ali",
+      "role": "All-rounder",
+      "price": "INR 8 crores"
+    },
+    {
+      "team": "CSK",
+      "name": "Mukesh Choudhary",
+      "role": "Bowler",
+      "price": "INR 20 Lakhs"
+    },
+    {
+      "team": "CSK",
+      "name": "Prashant Solanki",
+      "role": "Bowler",
+      "price": "INR 1.20 crores"
+    },
+    {
+      "team": "CSK",
+      "name": "Rajvardhan Hangargekar",
+      "role": "All-rounder",
+      "price": "INR 1.5 crores"
+    },
+    {
+      "team": "CSK",
+      "name": "Shivam Dube",
+      "role": "All-rounder",
+      "price": "INR 4 crores"
+    },
+    {
+      "team": "CSK",
+      "name": "Simarjeet Singh",
+      "role": "Bowler",
+      "price": "INR 20 Lakhs"
+    },
+    {
+      "team": "CSK",
+      "name": "Sameer Rizvi",
+      "role": "Batter",
+      "price": "INR 8.40 crore"
+    },
+    {
+      "team": "CSK",
+      "name": "Tushar Deshpande",
+      "role": "Bowler",
+      "price": "INR 20 Lakhs"
+    },
+    {
+      "team": "CSK",
+      "name": "Ajinkya Rahane",
+      "role": "Batsman",
+      "price": "INR 50 Lakhs"
+    },
+    {
+      "team": "CSK",
+      "name": "Shaik Rasheed",
+      "role": "Batsman",
+      "price": "INR 20 Lakhs"
+    },
+    {
+      "team": "CSK",
+      "name": "Nishant Sindhu",
+      "role": "All-rounder",
+      "price": "INR 60 Lakhs"
+    },
+    {
+      "team": "CSK",
+      "name": "Ajay Mandal",
+      "role": "All-rounder",
+      "price": "INR 20 Lakhs"
+    },
+    {
+      "team": "CSK",
+      "name": "Mustafizur Rahman",
+      "role": "Bowler",
+      "price": "INR 2 Crore"
+    },
+    {
+      "team": "CSK",
+      "name": "Aravelly Avinash",
+      "role": "Wicket-keeper",
+      "price": "INR 20 Lakhs"
+    },
+    {
+      "team": "DC",
+      "name": "Axar Patel",
+      "role": "All-rounder",
+      "price": "INR 9 crore"
+    },
+    {
+      "team": "DC",
+      "name": "Lalit Yadav",
+      "role": "All-rounder",
+      "price": "INR 65 lakh"
+    },
+    {
+      "team": "DC",
+      "name": "Vicky Ostwal",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "DC",
+      "name": "Mitchell Marsh",
+      "role": "All-rounder",
+      "price": "INR 6.5 crore"
+    },
+    {
+      "team": "DC",
+      "name": "David Warner",
+      "role": "Batter",
+      "price": "INR 6.25 crore"
+    },
+    {
+      "team": "DC",
+      "name": "Prithvi Shaw",
+      "role": "Batter",
+      "price": "INR 7.5 crore"
+    },
+    {
+      "team": "DC",
+      "name": "Yash Dhull",
+      "role": "Batter",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "DC",
+      "name": "Khaleel Ahmed",
+      "role": "Bowler",
+      "price": "INR 5.25 crore"
+    },
+    {
+      "team": "DC",
+      "name": "Lungi Ngidi",
+      "role": "Bowler",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "DC",
+      "name": "Kuldeep Yadav",
+      "role": "Bowler",
+      "price": "INR 2 crore"
+    },
+    {
+      "team": "DC",
+      "name": "Anrich Nortje",
+      "role": "Bowler",
+      "price": "INR 6.5 crore"
+    },
+    {
+      "team": "DC",
+      "name": "Praveen Dubey",
+      "role": "Bowler",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "DC",
+      "name": "Ishant Sharma",
+      "role": "Batter",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "DC",
+      "name": "Mukesh Kumar",
+      "role": "Bowler",
+      "price": "INR 5.5 crore"
+    },
+    {
+      "team": "DC",
+      "name": "Rishabh Pant",
+      "role": "Wicketkeeper",
+      "price": "INR 16 crore"
+    },
+    {
+      "team": "DC",
+      "name": "Harry Brook",
+      "role": "Batter",
+      "price": "INR 4 crore"
+    },
+    {
+      "team": "DC",
+      "name": "Abhishek Porel",
+      "role": "Wicketkeeper",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "DC",
+      "name": "Ricky Bhui",
+      "role": "Wicketkeeper",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "DC",
+      "name": "Tristan Stubbs",
+      "role": "Wicketkeeper",
+      "price": "INR 50 lakh"
+    },
+    {
+      "team": "DC",
+      "name": "Kumar Kushagra",
+      "role": "Wicketkeeper",
+      "price": "INR 7.2 crore"
+    },
+    {
+      "team": "DC",
+      "name": "Rasikh Dar Salam",
+      "role": "Bowler",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "DC",
+      "name": "Swastik Chikara",
+      "role": "Batter",
+      "price": "INR 20 lakh"
+    },
+    {
+      "team": "DC",
+      "name": "Shai Hope",
+      "role": "Wicketkeeper",
+      "price": "INR 75 lakh"
+    },
+    {
+      "team": "DC",
+      "name": "Sumit Kumar",
+      "role": "All-rounder",
+      "price": "INR 1 crore"
+    },
+    {
+      "team": "DC",
+      "name": "Jhye Richardson",
+      "role": "Bowler",
+      "price": "INR 5 crore"
+    },
+    {
+      "team": "RR",
+      "name": "Sanju Samson (c)",
+      "role": "Wicketkeeper-Batter",
+      "price": "INR 14 crores"
+    },
+    {
+      "team": "RR",
+      "name": "Yashasvi Jaiswal",
+      "role": "Batter",
+      "price": "INR 4 crores"
+    },
+    {
+      "team": "RR",
+      "name": "Jos Buttler",
+      "role": "Wicketkeeper-Batter",
+      "price": "INR 10 crores"
+    },
+    {
+      "team": "RR",
+      "name": "Riyan Parag",
+      "role": "All-rounder",
+      "price": "INR 3.80 crores"
+    },
+    {
+      "team": "RR",
+      "name": "Shimron Hetmyer",
+      "role": "Batter",
+      "price": "INR 8.50 crores"
+    },
+    {
+      "team": "RR",
+      "name": "Ravichandran Ashwin",
+      "role": "All-rounder",
+      "price": "INR 5 crores"
+    },
+    {
+      "team": "RR",
+      "name": "Prasidh Krishna",
+      "role": "Bowler",
+      "price": "INR 10 crores"
+    },
+    {
+      "team": "RR",
+      "name": "Trent Boult",
+      "role": "Bowler",
+      "price": "INR 8 crores"
+    },
+    {
+      "team": "RR",
+      "name": "Rovman Powell",
+      "role": "All-rounder",
+      "price": "INR 7.40 crore"
+    },
+    {
+      "team": "RR",
+      "name": "Yuzvendra Chahal",
+      "role": "Bowler",
+      "price": "INR 6.5 crores"
+    },
+    {
+      "team": "RR",
+      "name": "Navdeep Saini",
+      "role": "Bowler",
+      "price": "INR 2.60 crores"
+    },
+    {
+      "team": "RR",
+      "name": "Kuldeep Sen",
+      "role": "Bowler",
+      "price": "INR 20 lakhs"
+    },
+    {
+      "team": "RR",
+      "name": "Shubham Dubey",
+      "role": "Batter",
+      "price": "INR 5.80 crore"
+    },
+    {
+      "team": "RR",
+      "name": "Abid Mushtaq",
+      "role": "All-rounder",
+      "price": "INR 20 Lakhs"
+    },
+    {
+      "team": "RR",
+      "name": "Dhruv Jurel",
+      "role": "Wicketkeeper Batsman",
+      "price": "INR 20 lakhs"
+    },
+    {
+      "team": "RR",
+      "name": "Donavon Ferreira",
+      "role": "Wicketkeeper Batsman",
+      "price": "INR 50 lakhs"
+    },
+    {
+      "team": "RR",
+      "name": "Kunal Singh Rathore",
+      "role": "Wicketkeeper Batsman",
+      "price": "INR 20 lakhs"
+    },
+    {
+      "team": "RR",
+      "name": "Adam Zampa",
+      "role": "Bowler",
+      "price": "INR 1.5 crore"
+    },
+    {
+      "team": "RR",
+      "name": "Avesh Khan",
+      "role": "Bowler",
+      "price": "INR 10 Crore"
+    },
+    {
+      "team": "RR",
+      "name": "Sandeep Sharma",
+      "role": "Bowler",
+      "price": "INR 50 lakhs"
+    },
+    {
+      "team": "RR",
+      "name": "Tom Kohler-Cadmore",
+      "role": "Wicket-keeper Batsman",
+      "price": "INR 40 Lakhs"
+    },
+    {
+      "team": "RR",
+      "name": "Nandre Burger",
+      "role": "Bowler",
+      "price": "INR 50 Lakh"
+    },
+    {
+      "team": "RR",
+      "name": "Jason Holder",
+      "role": "All-rounder",
+      "price": "INR 5.75 crore"
+    },
+    {
+      "team": "RR",
+      "name": "Akash Vashist",
+      "role": "All-rounder",
+      "price": "INR 20 lakhs"
+    },
+    {
+      "team": "RR",
+      "name": "Abdul Basith",
+      "role": "All-rounder",
+      "price": "INR 20 lakhs"
+    }
+  ];
