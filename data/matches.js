@@ -633,196 +633,194 @@ export const matchesTest = [
 
 
 
-export const matches = 
-  [
-    {
-      "date": "22-March-2024",
-      "home": "Chennai Super Kings",
-      "away": "Royal Challengers Bangalore",
-      "venue": "Chennai",
-      "time": "19:30",
-      "awayCode": "CSK",
-      "homeCode": "RCB"
-    },
-    {
-      "date": "23-March-2024",
-      "home": "Punjab Kings",
-      "away": "Delhi Capitals",
-      "venue": "Mohali",
-      "time": "15:30",
-      "awayCode": "PBKS",
-      "homeCode": "DC"
-    },
-    {
-      "date": "23-March-2024",
-      "home": "Kolkata Knight Riders",
-      "away": "Sunrisers Hyderabad",
-      "venue": "Kolkata",
-      "time": "19:30",
-      "awayCode": "KKR",
-      "homeCode": "SRH"
-    },
-    {
-      "date": "24-March-2024",
-      "home": "Rajasthan Royals",
-      "away": "Lucknow Super Giants",
-      "venue": "Jaipur",
-      "time": "15:30",
-      "awayCode": "RR",
-      "homeCode": "LSG"
-    },
-    {
-      "date": "24-March-2024",
-      "home": "Gujarat Titans",
-      "away": "Mumbai Indians",
-      "venue": "Ahmedabad",
-      "time": "19:30",
-      "awayCode": "GT",
-      "homeCode": "MI"
-    },
-    {
-      "date": "25-March-2024",
-      "home": "Royal Challengers Bangalore",
-      "away": "Punjab Kings",
-      "venue": "Bengaluru",
-      "time": "19:30",
-      "awayCode": "RCB",
-      "homeCode": "PBKS"
-    },
-    {
-      "date": "26-March-2024",
-      "home": "Chennai Super Kings",
-      "away": "Gujarat Titans",
-      "venue": "Chennai",
-      "time": "19:30",
-      "awayCode": "CSK",
-      "homeCode": "GT"
-    },
-    {
-      "date": "27-March-2024",
-      "home": "Sunrisers Hyderabad",
-      "away": "Mumbai Indians",
-      "venue": "Hyderabad",
-      "time": "19:30",
-      "awayCode": "SRH",
-      "homeCode": "MI"
-    },
-    {
-      "date": "28-March-2024",
-      "home": "Rajasthan Royals",
-      "away": "Delhi Capitals",
-      "venue": "Jaipur",
-      "time": "19:30",
-      "awayCode": "RR",
-      "homeCode": "DC"
-    },
-    {
-      "date": "29-March-2024",
-      "home": "Royal Challengers Bangalore",
-      "away": "Kolkata Knight Riders",
-      "venue": "Bengaluru",
-      "time": "19:30",
-      "awayCode": "RCB",
-      "homeCode": "KKR"
-    },
-    {
-      "date": "30-March-2024",
-      "home": "Lucknow Super Giants",
-      "away": "Punjab Kings",
-      "venue": "Lucknow",
-      "time": "19:30",
-      "awayCode": "LSG",
-      "homeCode": "PBKS"
-    },
-    {
-      "date": "31-March-2024",
-      "home": "Gujarat Titans",
-      "away": "Sunrisers Hyderabad",
-      "venue": "Ahmedabad",
-      "time": "15:30",
-      "awayCode": "GT",
-      "homeCode": "SRH"
-    },
-    {
-      "date": "31-March-2024",
-      "home": "Delhi Capitals",
-      "away": "Chennai Super Kings",
-      "venue": "Visakhapatnam",
-      "time": "19:30",
-      "awayCode": "DC",
-      "homeCode": "CSK"
-    },
-    {
-      "date": "1-April-2024",
-      "home": "Mumbai Indians",
-      "away": "Rajasthan Royals",
-      "venue": "Mumbai",
-      "time": "19:30",
-      "awayCode": "MI",
-      "homeCode": "RR"
-    },
-    {
-      "date": "2-April-2024",
-      "home": "Royal Challengers Bangalore",
-      "away": "Lucknow Super Giants",
-      "venue": "Bengaluru",
-      "time": "19:30",
-      "awayCode": "RCB",
-      "homeCode": "LSG"
-    },
-    {
-      "date": "3-April-2024",
-      "home": "Delhi Capitals",
-      "away": "Kolkata Knight Riders",
-      "venue": "Visakhapatnam",
-      "time": "19:30",
-      "awayCode": "DC",
-      "homeCode": "KKR"
-    },
-    {
-      "date": "4-April-2024",
-      "home": "Gujarat Titans",
-      "away": "Punjab Kings",
-      "venue": "Ahmedabad",
-      "time": "19:30",
-      "awayCode": "GT",
-      "homeCode": "PBKS"
-    },
-    {
-      "date": "5-April-2024",
-      "home": "Sunrisers Hyderabad",
-      "away": "Chennai Super Kings",
-      "venue": "Hyderabad",
-      "time": "19:30",
-      "awayCode": "SRH",
-      "homeCode": "CSK"
-    },
-    {
-      "date": "6-April-2024",
-      "home": "Rajasthan Royals",
-      "away": "Royal Challengers Bangalore",
-      "venue": "Jaipur",
-      "time": "19:30",
-      "awayCode": "RR",
-      "homeCode": "RCB"
-    },
-    {
-      "date": "7-April-2024",
-      "home": "Mumbai Indians",
-      "away": "Delhi Capitals",
-      "venue": "Mumbai",
-      "time": "15:30",
-      "awayCode": "MI",
-      "homeCode": "DC"
-    },
-    {
-      "date": "7-April-2024",
-      "home": "Lucknow Super Giants",
-      "away": "Gujarat Titans",
-      "venue": "Lucknow",
-      "time": "19:30",
-      "awayCode": "LSG",
-      "homeCode": "GT"
-    }
-   ]
-
+export const matches = [
+  {
+    "date": "22-March-2024",
+    "home": "Chennai Super Kings",
+    "away": "Royal Challengers Bangalore",
+    "venue": "Chennai",
+    "time": "19:30",
+    "homeCode": "CSK",
+    "awayCode": "RCB"
+  },
+  {
+    "date": "23-March-2024",
+    "home": "Punjab Kings",
+    "away": "Delhi Capitals",
+    "venue": "Mohali",
+    "time": "15:30",
+    "homeCode": "PBKS",
+    "awayCode": "DC"
+  },
+  {
+    "date": "23-March-2024",
+    "home": "Kolkata Knight Riders",
+    "away": "Sunrisers Hyderabad",
+    "venue": "Kolkata",
+    "time": "19:30",
+    "homeCode": "KKR",
+    "awayCode": "SRH"
+  },
+  {
+    "date": "24-March-2024",
+    "home": "Rajasthan Royals",
+    "away": "Lucknow Super Giants",
+    "venue": "Jaipur",
+    "time": "15:30",
+    "homeCode": "RR",
+    "awayCode": "LSG"
+  },
+  {
+    "date": "24-March-2024",
+    "home": "Gujarat Titans",
+    "away": "Mumbai Indians",
+    "venue": "Ahmedabad",
+    "time": "19:30",
+    "homeCode": "GT",
+    "awayCode": "MI"
+  },
+  {
+    "date": "25-March-2024",
+    "home": "Royal Challengers Bangalore",
+    "away": "Punjab Kings",
+    "venue": "Bengaluru",
+    "time": "19:30",
+    "homeCode": "RCB",
+    "awayCode": "PBKS"
+  },
+  {
+    "date": "26-March-2024",
+    "home": "Chennai Super Kings",
+    "away": "Gujarat Titans",
+    "venue": "Chennai",
+    "time": "19:30",
+    "homeCode": "CSK",
+    "awayCode": "GT"
+  },
+  {
+    "date": "27-March-2024",
+    "home": "Sunrisers Hyderabad",
+    "away": "Mumbai Indians",
+    "venue": "Hyderabad",
+    "time": "19:30",
+    "homeCode": "SRH",
+    "awayCode": "MI"
+  },
+  {
+    "date": "28-March-2024",
+    "home": "Rajasthan Royals",
+    "away": "Delhi Capitals",
+    "venue": "Jaipur",
+    "time": "19:30",
+    "homeCode": "RR",
+    "awayCode": "DC"
+  },
+  {
+    "date": "29-March-2024",
+    "home": "Royal Challengers Bangalore",
+    "away": "Kolkata Knight Riders",
+    "venue": "Bengaluru",
+    "time": "19:30",
+    "homeCode": "RCB",
+    "awayCode": "KKR"
+  },
+  {
+    "date": "30-March-2024",
+    "home": "Lucknow Super Giants",
+    "away": "Punjab Kings",
+    "venue": "Lucknow",
+    "time": "19:30",
+    "homeCode": "LSG",
+    "awayCode": "PBKS"
+  },
+  {
+    "date": "31-March-2024",
+    "home": "Gujarat Titans",
+    "away": "Sunrisers Hyderabad",
+    "venue": "Ahmedabad",
+    "time": "15:30",
+    "homeCode": "GT",
+    "awayCode": "SRH"
+  },
+  {
+    "date": "31-March-2024",
+    "home": "Delhi Capitals",
+    "away": "Chennai Super Kings",
+    "venue": "Visakhapatnam",
+    "time": "19:30",
+    "homeCode": "DC",
+    "awayCode": "CSK"
+  },
+  {
+    "date": "1-April-2024",
+    "home": "Mumbai Indians",
+    "away": "Rajasthan Royals",
+    "venue": "Mumbai",
+    "time": "19:30",
+    "homeCode": "MI",
+    "awayCode": "RR"
+  },
+  {
+    "date": "2-April-2024",
+    "home": "Royal Challengers Bangalore",
+    "away": "Lucknow Super Giants",
+    "venue": "Bengaluru",
+    "time": "19:30",
+    "homeCode": "RCB",
+    "awayCode": "LSG"
+  },
+  {
+    "date": "3-April-2024",
+    "home": "Delhi Capitals",
+    "away": "Kolkata Knight Riders",
+    "venue": "Visakhapatnam",
+    "time": "19:30",
+    "homeCode": "DC",
+    "awayCode": "KKR"
+  },
+  {
+    "date": "4-April-2024",
+    "home": "Gujarat Titans",
+    "away": "Punjab Kings",
+    "venue": "Ahmedabad",
+    "time": "19:30",
+    "homeCode": "GT",
+    "awayCode": "PBKS"
+  },
+  {
+    "date": "5-April-2024",
+    "home": "Sunrisers Hyderabad",
+    "away": "Chennai Super Kings",
+    "venue": "Hyderabad",
+    "time": "19:30",
+    "homeCode": "SRH",
+    "awayCode": "CSK"
+  },
+  {
+    "date": "6-April-2024",
+    "home": "Rajasthan Royals",
+    "away": "Royal Challengers Bangalore",
+    "venue": "Jaipur",
+    "time": "19:30",
+    "homeCode": "RR",
+    "awayCode": "RCB"
+  },
+  {
+    "date": "7-April-2024",
+    "home": "Mumbai Indians",
+    "away": "Delhi Capitals",
+    "venue": "Mumbai",
+    "time": "15:30",
+    "homeCode": "MI",
+    "awayCode": "DC"
+  },
+  {
+    "date": "7-April-2024",
+    "home": "Lucknow Super Giants",
+    "away": "Gujarat Titans",
+    "venue": "Lucknow",
+    "time": "19:30",
+    "homeCode": "LSG",
+    "awayCode": "GT"
+  }
+]
