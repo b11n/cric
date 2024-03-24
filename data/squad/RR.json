@@ -1,1 +1,127 @@
-[{"name":" Shimron Hetmyer ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171232/shimron-hetmyer.jpg"},{"name":" Yashasvi Jaiswal ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226279/yashasvi-jaiswal.jpg"},{"name":" Devdutt Padikkal ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c195763/devdutt-padikkal.jpg"},{"name":" Riyan Parag ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c156160/riyan-parag.jpg"},{"name":" Kunal Singh Rathore ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/kunal-singh-rathore.jpg"},{"name":" Joe Root ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170942/joe-root.jpg"},{"name":" Abdul Basith ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/abdul-basith.jpg"},{"name":" Ravichandran Ashwin ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244976/ravichandran-ashwin.jpg"},{"name":" Jason Holder ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244677/jason-holder.jpg"},{"name":" Sanju Samson (Captain) ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226289/sanju-samson.jpg"},{"name":" Jos Buttler ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244800/jos-buttler.jpg"},{"name":" Donavon Ferreira ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/donavon-ferreira.jpg"},{"name":" Dhruv Jurel ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226551/dhruv-jurel.jpg"},{"name":" Murugan Ashwin ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226412/murugan-ashwin.jpg"},{"name":" KM Asif ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226409/km-asif.jpg"},{"name":" Trent Boult ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244829/trent-boult.jpg"},{"name":" KC Cariappa ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226502/kc-cariappa.jpg"},{"name":" Yuzvendra Chahal ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244981/yuzvendra-chahal.jpg"},{"name":" Obed McCoy ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244723/obed-mccoy.jpg"},{"name":" Navdeep Saini ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226400/navdeep-saini.jpg"},{"name":" Kuldeep Sen ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/kuldeep-sen.jpg"},{"name":" Akash Vasisht ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/akash-vasisht.jpg"},{"name":" Kuldip Yadav ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/kuldip-yadav.jpg"},{"name":" Adam Zampa ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244782/adam-zampa.jpg"}]
+[
+    {
+      "team": "RR",
+      "name": "Sanju Samson (c)",
+      "role": "Wicketkeeper-Batter"
+    },
+    {
+      "team": "RR",
+      "name": "Yashasvi Jaiswal",
+      "role": "Batter"
+    },
+    {
+      "team": "RR",
+      "name": "Jos Buttler",
+      "role": "Wicketkeeper-Batter"
+    },
+    {
+      "team": "RR",
+      "name": "Riyan Parag",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RR",
+      "name": "Shimron Hetmyer",
+      "role": "Batter"
+    },
+    {
+      "team": "RR",
+      "name": "Ravichandran Ashwin",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RR",
+      "name": "Prasidh Krishna",
+      "role": "Bowler"
+    },
+    {
+      "team": "RR",
+      "name": "Trent Boult",
+      "role": "Bowler"
+    },
+    {
+      "team": "RR",
+      "name": "Rovman Powell",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RR",
+      "name": "Yuzvendra Chahal",
+      "role": "Bowler"
+    },
+    {
+      "team": "RR",
+      "name": "Navdeep Saini",
+      "role": "Bowler"
+    },
+    {
+      "team": "RR",
+      "name": "Kuldeep Sen",
+      "role": "Bowler"
+    },
+    {
+      "team": "RR",
+      "name": "Shubham Dubey",
+      "role": "Batter"
+    },
+    {
+      "team": "RR",
+      "name": "Abid Mushtaq",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RR",
+      "name": "Dhruv Jurel",
+      "role": "Wicketkeeper Batsman"
+    },
+    {
+      "team": "RR",
+      "name": "Donavon Ferreira",
+      "role": "Wicketkeeper Batsman"
+    },
+    {
+      "team": "RR",
+      "name": "Kunal Singh Rathore",
+      "role": "Wicketkeeper Batsman"
+    },
+    {
+      "team": "RR",
+      "name": "Adam Zampa",
+      "role": "Bowler"
+    },
+    {
+      "team": "RR",
+      "name": "Avesh Khan",
+      "role": "Bowler"
+    },
+    {
+      "team": "RR",
+      "name": "Sandeep Sharma",
+      "role": "Bowler"
+    },
+    {
+      "team": "RR",
+      "name": "Tom Kohler-Cadmore",
+      "role": "Wicket-keeper Batsman"
+    },
+    {
+      "team": "RR",
+      "name": "Nandre Burger",
+      "role": "Bowler"
+    },
+    {
+      "team": "RR",
+      "name": "Jason Holder",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RR",
+      "name": "Akash Vashist",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RR",
+      "name": "Abdul Basith",
+      "role": "All-rounder"
+    }
+  ]

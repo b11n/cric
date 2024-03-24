@@ -1,1 +1,127 @@
-[{"name":" Yash Dhull ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226296/yash-dhull.jpg"},{"name":" Sarfaraz Khan ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c153421/sarfaraz-khan.jpg"},{"name":" Manish Pandey ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171022/manish-pandey.jpg"},{"name":" Rovman Powell ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244832/rovman-powell.jpg"},{"name":" Rilee Rossouw ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244768/rilee-rossouw.jpg"},{"name":" Prithvi Shaw ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171030/prithvi-shaw.jpg"},{"name":" David Warner (Captain) ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244788/david-warner.jpg"},{"name":" Lalit Yadav ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226516/lalit-yadav.jpg"},{"name":" Mitchell Marsh ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244805/mitchell-marsh.jpg"},{"name":" Ripal Patel ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226523/ripal-patel.jpg"},{"name":" Axar Patel ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244972/axar-patel.jpg"},{"name":" Rishabh Pant ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244978/rishabh-pant.jpg"},{"name":" Philip Salt ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244804/philip-salt.jpg"},{"name":" Khaleel Ahmed ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171017/khaleel-ahmed.jpg"},{"name":" Aman Hakim Khan ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/aman-hakim-khan.jpg"},{"name":" Praveen Dubey ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c195872/praveen-dubey.jpg"},{"name":" Kuldeep Yadav ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170683/kuldeep-yadav.jpg"},{"name":" Mukesh Kumar ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/mukesh-kumar.jpg"},{"name":" Mustafizur Rahman ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244924/mustafizur-rahman.jpg"},{"name":" Kamlesh Nagarkoti ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226313/kamlesh-nagarkoti.jpg"},{"name":" Lungi Ngidi ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244772/lungi-ngidi.jpg"},{"name":" Anrich Nortje ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244754/anrich-nortje.jpg"},{"name":" Vicky Ostwal ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226291/vicky-ostwal.jpg"},{"name":" Chetan Sakariya ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c169708/chetan-sakariya.jpg"},{"name":" Ishant Sharma ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c154520/ishant-sharma.jpg"}]
+[
+    {
+      "team": "DC",
+      "name": "Axar Patel",
+      "role": "All-rounder"
+    },
+    {
+      "team": "DC",
+      "name": "Lalit Yadav",
+      "role": "All-rounder"
+    },
+    {
+      "team": "DC",
+      "name": "Vicky Ostwal",
+      "role": "Bowler"
+    },
+    {
+      "team": "DC",
+      "name": "Mitchell Marsh",
+      "role": "All-rounder"
+    },
+    {
+      "team": "DC",
+      "name": "David Warner",
+      "role": "Batter"
+    },
+    {
+      "team": "DC",
+      "name": "Prithvi Shaw",
+      "role": "Batter"
+    },
+    {
+      "team": "DC",
+      "name": "Yash Dhull",
+      "role": "Batter"
+    },
+    {
+      "team": "DC",
+      "name": "Khaleel Ahmed",
+      "role": "Bowler"
+    },
+    {
+      "team": "DC",
+      "name": "Lungi Ngidi",
+      "role": "Bowler"
+    },
+    {
+      "team": "DC",
+      "name": "Kuldeep Yadav",
+      "role": "Bowler"
+    },
+    {
+      "team": "DC",
+      "name": "Anrich Nortje",
+      "role": "Bowler"
+    },
+    {
+      "team": "DC",
+      "name": "Praveen Dubey",
+      "role": "Bowler"
+    },
+    {
+      "team": "DC",
+      "name": "Ishant Sharma",
+      "role": "Batter"
+    },
+    {
+      "team": "DC",
+      "name": "Mukesh Kumar",
+      "role": "Bowler"
+    },
+    {
+      "team": "DC",
+      "name": "Rishabh Pant",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "DC",
+      "name": "Harry Brook",
+      "role": "Batter"
+    },
+    {
+      "team": "DC",
+      "name": "Abhishek Porel",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "DC",
+      "name": "Ricky Bhui",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "DC",
+      "name": "Tristan Stubbs",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "DC",
+      "name": "Kumar Kushagra",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "DC",
+      "name": "Rasikh Dar Salam",
+      "role": "Bowler"
+    },
+    {
+      "team": "DC",
+      "name": "Swastik Chikara",
+      "role": "Batter"
+    },
+    {
+      "team": "DC",
+      "name": "Shai Hope",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "DC",
+      "name": "Sumit Kumar",
+      "role": "All-rounder"
+    },
+    {
+      "team": "DC",
+      "name": "Jhye Richardson",
+      "role": "Bowler"
+    }
+  ]

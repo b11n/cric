@@ -1,1 +1,122 @@
-[{"name":" Rohit Sharma (Captain) ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244982/rohit-sharma.jpg"},{"name":" Dewald Brevis ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226302/dewald-brevis.jpg"},{"name":" Ramandeep Singh ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/ramandeep-singh.jpg"},{"name":" Tilak Varma ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226525/tilak-varma.jpg"},{"name":" Nehal Wadhera ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/nehal-wadhera.jpg"},{"name":" Suryakumar Yadav ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244979/suryakumar-yadav.jpg"},{"name":" Tim David ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244810/tim-david.jpg"},{"name":" Shams Mulani ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/shams-mulani.jpg"},{"name":" Piyush Chawla ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c152613/piyush-chawla.jpg"},{"name":" Cameron Green ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c198706/cameron-green.jpg"},{"name":" Kumar Kartikeya ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/kumar-kartikeya.jpg"},{"name":" Hrithik Shokeen ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/hrithik-shokeen.jpg"},{"name":" Arjun Tendulkar ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c154048/arjun-tendulkar.jpg"},{"name":" Ishan Kishan ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226219/ishan-kishan.jpg"},{"name":" Tristan Stubbs ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244778/tristan-stubbs.jpg"},{"name":" Vishnu Vinod ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/vishnu-vinod.jpg"},{"name":" Jofra Archer ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170970/jofra-archer.jpg"},{"name":" Arshad Khan ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/arshad-khan.jpg"},{"name":" Jason Behrendorff ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170647/jason-behrendorff.jpg"},{"name":" Jasprit Bumrah ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170685/jasprit-bumrah.jpg"},{"name":" Raghav Goyal ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/raghav-goyal.jpg"},{"name":" Duan Jansen ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226385/duan-jansen.jpg"},{"name":" Akash Madhwal ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/akash-madhwal.jpg"},{"name":" Jhye Richardson ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c156047/jhye-richardson.jpg"}]
+[
+    {
+      "team": "MI",
+      "name": "Hardik Pandya",
+      "role": "All-rounder"
+    },
+    {
+      "team": "MI",
+      "name": "Rohit Sharma",
+      "role": "Batter"
+    },
+    {
+      "team": "MI",
+      "name": "Suryakumar Yadav",
+      "role": "Batter"
+    },
+    {
+      "team": "MI",
+      "name": "Tim David",
+      "role": "Batter"
+    },
+    {
+      "team": "MI",
+      "name": "Ishan Kishan",
+      "role": "Wicket-keeper"
+    },
+    {
+      "team": "MI",
+      "name": "Dewald Brevis",
+      "role": "Batter"
+    },
+    {
+      "team": "MI",
+      "name": "N. Tilak Varma",
+      "role": "Batter"
+    },
+    {
+      "team": "MI",
+      "name": "Shreyas Gopal",
+      "role": "Bowler"
+    },
+    {
+      "team": "MI",
+      "name": "Romario Shepherd",
+      "role": "All-rounder"
+    },
+    {
+      "team": "MI",
+      "name": "Arjun Tendulkar",
+      "role": "All-rounder"
+    },
+    {
+      "team": "MI",
+      "name": "Jason Behrendorff",
+      "role": "Bowler"
+    },
+    {
+      "team": "MI",
+      "name": "Kumar Kartikeya Singh",
+      "role": "Bowler"
+    },
+    {
+      "team": "MI",
+      "name": "Akash Madhwal",
+      "role": "Bowler"
+    },
+    {
+      "team": "MI",
+      "name": "Jasprit Bumrah",
+      "role": "Bowler"
+    },
+    {
+      "team": "MI",
+      "name": "Vishnu Vinod",
+      "role": "Wicket-keeper"
+    },
+    {
+      "team": "MI",
+      "name": "Gerald Coetzee",
+      "role": "Bowler"
+    },
+    {
+      "team": "MI",
+      "name": "Nehal Wadhera",
+      "role": "Batter"
+    },
+    {
+      "team": "MI",
+      "name": "Piyush Chawla",
+      "role": "Bowler"
+    },
+    {
+      "team": "MI",
+      "name": "Dilshan Madushanka",
+      "role": "Bowler"
+    },
+    {
+      "team": "MI",
+      "name": "Shams Mulani",
+      "role": "Bowler"
+    },
+    {
+      "team": "MI",
+      "name": "Nuwan Thusara",
+      "role": "Bowler"
+    },
+    {
+      "team": "MI",
+      "name": "Anshul Kamboj",
+      "role": "Bowler"
+    },
+    {
+      "team": "MI",
+      "name": "Mohammad Nabi",
+      "role": "All-rounder"
+    },
+    {
+      "team": "MI",
+      "name": "Shivalik Sharma",
+      "role": "All-rounder"
+    }
+  ]

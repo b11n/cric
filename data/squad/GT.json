@@ -1,25 +1,127 @@
-    [{ "name": " Abhinav Manohar ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/abhinav-manohar.jpg" },
-    { "name": " David Miller ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244759/david-miller.jpg" },
-    { "name": " Sai Sudharsan ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/sai-sudharsan.jpg" },
-    { "name": " Shubman Gill ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171042/shubman-gill.jpg" },
-    { "name": " Kane Williamson ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244826/kane-williamson.jpg" },
-    { "name": " Hardik Pandya (Captain) ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244973/hardik-pandya.jpg" },
-    { "name": " Vijay Shankar ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c170664/vijay-shankar.jpg" },
-    { "name": " Rahul Tewatia ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c196288/rahul-tewatia.jpg" },
-    { "name": " Rashid Khan ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244769/rashid-khan.jpg" },
-    { "name": " Shivam Mavi ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c155147/shivam-mavi.jpg" },
-    { "name": " Srikar Bharat ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226437/srikar-bharat.jpg" },
-    { "name": " Urvil Patel ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/urvil-patel.jpg" },
-    { "name": " Wriddhiman Saha ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c171058/wriddhiman-saha.jpg" },
-    { "name": " Matthew Wade ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244799/matthew-wade.jpg" },
-    { "name": " Alzarri Joseph ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244661/alzarri-joseph.jpg" },
-    { "name": " Joshua Little ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244649/joshua-little.jpg" },
-    { "name": " Darshan Nalkande ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/darshan-nalkande.jpg" },
-    { "name": " Mohammed Shami ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244977/mohammed-shami.jpg" },
-    { "name": " Noor Ahmad ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226316/noor-ahmad.jpg" },
-    { "name": " Ravisrinivasan Sai Kishore ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226507/ravisrinivasan-sai-kishore.jpg" },
-    { "name": " Pradeep Sangwan ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c153373/pradeep-sangwan.jpg" },
-    { "name": " Mohit Sharma ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c192642/mohit-sharma.jpg" },
-    { "name": " Odean Smith ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c244724/odean-smith.jpg" },
-    { "name": " Jayant Yadav ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c226388/jayant-yadav.jpg" },
-    { "name": " Yash Dayal ", "img": "https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/yash-dayal.jpg" }]
+[
+    {
+      "team": "GT",
+      "name": "B. Sai Sudharsan",
+      "role": "Batter"
+    },
+    {
+      "team": "GT",
+      "name": "Shubman Gill",
+      "role": "Batter"
+    },
+    {
+      "team": "GT",
+      "name": "Rashid Khan",
+      "role": "All-rounder"
+    },
+    {
+      "team": "GT",
+      "name": "David Miller",
+      "role": "Batter"
+    },
+    {
+      "team": "GT",
+      "name": "Rahul Tewatia",
+      "role": "All-rounder"
+    },
+    {
+      "team": "GT",
+      "name": "Matthew Wade",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "GT",
+      "name": "Vijay Shankar",
+      "role": "All-rounder"
+    },
+    {
+      "team": "GT",
+      "name": "Mohammed Shami",
+      "role": "Bowler"
+    },
+    {
+      "team": "GT",
+      "name": "Wriddhiman Saha",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "GT",
+      "name": "Jayant Yadav",
+      "role": "All-rounder"
+    },
+    {
+      "team": "GT",
+      "name": "Abhinav Manohar",
+      "role": "Bowler"
+    },
+    {
+      "team": "GT",
+      "name": "Sai Kishore",
+      "role": "Bowler"
+    },
+    {
+      "team": "GT",
+      "name": "Kane Williamson",
+      "role": "Batter"
+    },
+    {
+      "team": "GT",
+      "name": "Darshan Nalkande",
+      "role": "Bowler"
+    },
+    {
+      "team": "GT",
+      "name": "Noor Ahmad",
+      "role": "Bowler"
+    },
+    {
+      "team": "GT",
+      "name": "Josh Little",
+      "role": "Bowler"
+    },
+    {
+      "team": "GT",
+      "name": "Mohit Sharma",
+      "role": "Bowler"
+    },
+    {
+      "team": "GT",
+      "name": "Umesh Yadav",
+      "role": "Bowler"
+    },
+    {
+      "team": "GT",
+      "name": "Sushant Mishra",
+      "role": "Bowler"
+    },
+    {
+      "team": "GT",
+      "name": "Kartik Tyagi",
+      "role": "Bowler"
+    },
+    {
+      "team": "GT",
+      "name": "Manav Suthar",
+      "role": "Bowler"
+    },
+    {
+      "team": "GT",
+      "name": "Azmatullah Omarzai",
+      "role": "All-rounder"
+    },
+    {
+      "team": "GT",
+      "name": "Shahrukh Khan",
+      "role": "All-rounder"
+    },
+    {
+      "team": "GT",
+      "name": "Robin Minz",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "GT",
+      "name": "Spencer Johnson",
+      "role": "Bowler"
+    }
+  ]

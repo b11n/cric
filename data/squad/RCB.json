@@ -1,1 +1,127 @@
-[{"name":" Faf du Plessis (Captain) ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c170639/faf-du-plessis.jpg"},{"name":" Virat Kohli ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244980/virat-kohli.jpg"},{"name":" Rajat Patidar ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c234983/rajat-patidar.jpg"},{"name":" Suyash Prabhudessai ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/suyash-prabhudessai.jpg"},{"name":" Manoj Bhandage ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/manoj-bhandage.jpg"},{"name":" Mahipal Lomror ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226541/mahipal-lomror.jpg"},{"name":" Glenn Maxwell ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244786/glenn-maxwell.jpg"},{"name":" Michael Bracewell ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244823/michael-bracewell.jpg"},{"name":" Wanindu Hasaranga ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244676/wanindu-hasaranga.jpg"},{"name":" Shahbaz Ahmed ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226473/shahbaz-ahmed.jpg"},{"name":" David Willey ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244795/david-willey.jpg"},{"name":" Finn Allen ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244814/finn-allen.jpg"},{"name":" Anuj Rawat ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226472/anuj-rawat.jpg"},{"name":" Dinesh Karthik ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244969/dinesh-karthik.jpg"},{"name":" Akash Deep ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/akash-deep.jpg"},{"name":" Avinash Singh ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/avinash-singh.jpg"},{"name":" Josh Hazlewood ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244790/josh-hazlewood.jpg"},{"name":" Siddarth Kaul ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c192649/siddarth-kaul.jpg"},{"name":" Mohammed Siraj ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171039/mohammed-siraj.jpg"},{"name":" Harshal Patel ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244974/harshal-patel.jpg"},{"name":" Rajan Kumar ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/rajan-kumar.jpg"},{"name":" Himanshu Sharma ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/himanshu-sharma.jpg"},{"name":" Karn Sharma ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226391/karn-sharma.jpg"},{"name":" Sonu Yadav ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/sonu-yadav.jpg"},{"name":" Reece Topley ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244807/reece-topley.jpg"}]
+[
+    {
+      "team": "RCB",
+      "name": "Faf Du Plessis",
+      "role": "Batter"
+    },
+    {
+      "team": "RCB",
+      "name": "Virat Kohli",
+      "role": "Batter"
+    },
+    {
+      "team": "RCB",
+      "name": "Rajat Patidar",
+      "role": "Batter"
+    },
+    {
+      "team": "RCB",
+      "name": "Anuj Rawat",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "RCB",
+      "name": "Dinesh Karthik",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "RCB",
+      "name": "Glenn Maxwell",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RCB",
+      "name": "Cameron Green",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RCB",
+      "name": "Suyash S Prabhudessai",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RCB",
+      "name": "Will Jacks",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RCB",
+      "name": "Mahipal Lomror",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RCB",
+      "name": "Manoj Bhandage",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RCB",
+      "name": "Akash Deep",
+      "role": "All-rounder"
+    },
+    {
+      "team": "RCB",
+      "name": "Karn Sharma",
+      "role": "Bowler"
+    },
+    {
+      "team": "RCB",
+      "name": "Mayank Dagar",
+      "role": "Bowler"
+    },
+    {
+      "team": "RCB",
+      "name": "Mohammed Siraj",
+      "role": "Bowler"
+    },
+    {
+      "team": "RCB",
+      "name": "Reece Topley",
+      "role": "Bowler"
+    },
+    {
+      "team": "RCB",
+      "name": "Himanshu Sharma",
+      "role": "Bowler"
+    },
+    {
+      "team": "RCB",
+      "name": "Vijaykumar Vyshak",
+      "role": "Bowler"
+    },
+    {
+      "team": "RCB",
+      "name": "Alzarri Joseph",
+      "role": "Bowler"
+    },
+    {
+      "team": "RCB",
+      "name": "Saurav Chauhan",
+      "role": "Batter"
+    },
+    {
+      "team": "RCB",
+      "name": "Swapnil Singh",
+      "role": "Bowler"
+    },
+    {
+      "team": "RCB",
+      "name": "Lockie Ferguson",
+      "role": "Bowler"
+    },
+    {
+      "team": "RCB",
+      "name": "Tom Curran",
+      "role": "Bowler"
+    },
+    {
+      "team": "RCB",
+      "name": "Yash Dayal",
+      "role": "Bowler"
+    },
+    {
+      "team": "RCB",
+      "name": "Sonu Yadav",
+      "role": "All-rounder"
+    }
+  ]

@@ -1,1 +1,127 @@
-[{"name":" Manan Vohra ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226514/manan-vohra.jpg"},{"name":" Prerak Mankad ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c169684/prerak-mankad.jpg"},{"name":" Deepak Hooda ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244970/deepak-hooda.jpg"},{"name":" Karan Sharma ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/karan-sharma.jpg"},{"name":" Krunal Pandya ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c171069/krunal-pandya.jpg"},{"name":" Kyle Mayers ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244721/kyle-mayers.jpg"},{"name":" Marcus Stoinis ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244801/marcus-stoinis.jpg"},{"name":" Ayush Badoni ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/ayush-badoni.jpg"},{"name":" Krishnappa Gowtham ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c156045/krishnappa-gowtham.jpg"},{"name":" Daniel Sams ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c180315/daniel-sams.jpg"},{"name":" Swapnil Singh ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/swapnil-singh.jpg"},{"name":" KL Rahul (Captain) ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244975/kl-rahul.jpg"},{"name":" Quinton de Kock ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244766/quinton-de-kock.jpg"},{"name":" Nicholas Pooran ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244722/nicholas-pooran.jpg"},{"name":" Avesh Khan ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226438/avesh-khan.jpg"},{"name":" Mark Wood ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244802/mark-wood.jpg"},{"name":" Ravi Bishnoi ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226280/ravi-bishnoi.jpg"},{"name":" Jaydev Unadkat ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c169793/jaydev-unadkat.jpg"},{"name":" Yash Thakur ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/yash-thakur.jpg"},{"name":" Romario Shepherd ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c226370/romario-shepherd.jpg"},{"name":" Amit Mishra ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c153362/amit-mishra.jpg"},{"name":" Naveen-ul-Haq ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c244764/naveen-ul-haq.jpg"},{"name":" Yudhvir Singh Charak ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/yudhvir-singh-charak.jpg"},{"name":" Mohsin Khan ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/mohsin-khan.jpg"},{"name":" Mayank Yadav ","img":"https://www.cricbuzz.com/a/img/v1/75x75/i1/c174146/mayank-yadav.jpg"}]
+[
+    {
+      "team": "LSG",
+      "name": "Deepak Hooda",
+      "role": "All-rounder"
+    },
+    {
+      "team": "LSG",
+      "name": "Ayush Badoni",
+      "role": "Batter"
+    },
+    {
+      "team": "LSG",
+      "name": "Kyle Mayers",
+      "role": "All-rounder"
+    },
+    {
+      "team": "LSG",
+      "name": "Naveen Ul Haq",
+      "role": "Bowler"
+    },
+    {
+      "team": "LSG",
+      "name": "Prerak Mankad",
+      "role": "All-rounder"
+    },
+    {
+      "team": "LSG",
+      "name": "Marcus Stoinis",
+      "role": "All-rounder"
+    },
+    {
+      "team": "LSG",
+      "name": "Krishnappa Gowtham",
+      "role": "All-rounder"
+    },
+    {
+      "team": "LSG",
+      "name": "Krunal Pandya",
+      "role": "All-rounder"
+    },
+    {
+      "team": "LSG",
+      "name": "Yash Thakur",
+      "role": "Bowler"
+    },
+    {
+      "team": "LSG",
+      "name": "Amit Mishra",
+      "role": "Bowler"
+    },
+    {
+      "team": "LSG",
+      "name": "Mark Wood",
+      "role": "Bowler"
+    },
+    {
+      "team": "LSG",
+      "name": "Ravi Bishnoi",
+      "role": "Bowler"
+    },
+    {
+      "team": "LSG",
+      "name": "Mohsin Khan",
+      "role": "Bowler"
+    },
+    {
+      "team": "LSG",
+      "name": "Mayank Yadav",
+      "role": "Bowler"
+    },
+    {
+      "team": "LSG",
+      "name": "Quinton De Kock",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "LSG",
+      "name": "Nicholas Pooran",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "LSG",
+      "name": "Kl Rahul",
+      "role": "Wicketkeeper"
+    },
+    {
+      "team": "LSG",
+      "name": "Devdutt Padikkal",
+      "role": "Batter"
+    },
+    {
+      "team": "LSG",
+      "name": "Ashton Turner",
+      "role": "Batter"
+    },
+    {
+      "team": "LSG",
+      "name": "Yudhvir Singh",
+      "role": "Bowler"
+    },
+    {
+      "team": "LSG",
+      "name": "David Willey",
+      "role": "All-rounder"
+    },
+    {
+      "team": "LSG",
+      "name": "Arshin Kulkarni",
+      "role": "All-rounder"
+    },
+    {
+      "team": "LSG",
+      "name": "Shivam Mavi",
+      "role": "Bowler"
+    },
+    {
+      "team": "LSG",
+      "name": "Manimaran Siddarth",
+      "role": "Bowler"
+    },
+    {
+      "team": "LSG",
+      "name": "Arshad Khan",
+      "role": "Bowler"
+    }
+  ]
