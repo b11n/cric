@@ -640,8 +640,8 @@ export const matches = [
     "away": "Royal Challengers Bangalore",
     "venue": "Chennai",
     "time": "19:30",
-    "awayCode": "CSK",
-    "homeCode": "RCB"
+    "homeCode": "CSK",
+    "awayCode": "RCB"
   },
   {
     "date": "23-March-2024",
@@ -649,8 +649,8 @@ export const matches = [
     "away": "Delhi Capitals",
     "venue": "Mohali",
     "time": "15:30",
-    "awayCode": "PBKS",
-    "homeCode": "DC"
+    "homeCode": "PBKS",
+    "awayCode": "DC"
   },
   {
     "date": "23-March-2024",
@@ -658,8 +658,8 @@ export const matches = [
     "away": "Sunrisers Hyderabad",
     "venue": "Kolkata",
     "time": "19:30",
-    "awayCode": "KKR",
-    "homeCode": "SRH"
+    "homeCode": "KKR",
+    "awayCode": "SRH"
   },
   {
     "date": "24-March-2024",
@@ -667,8 +667,8 @@ export const matches = [
     "away": "Lucknow Super Giants",
     "venue": "Jaipur",
     "time": "15:30",
-    "awayCode": "RR",
-    "homeCode": "LSG"
+    "homeCode": "RR",
+    "awayCode": "LSG"
   },
   {
     "date": "24-March-2024",
@@ -676,8 +676,8 @@ export const matches = [
     "away": "Mumbai Indians",
     "venue": "Ahmedabad",
     "time": "19:30",
-    "awayCode": "GT",
-    "homeCode": "MI"
+    "homeCode": "GT",
+    "awayCode": "MI"
   },
   {
     "date": "25-March-2024",
@@ -685,8 +685,8 @@ export const matches = [
     "away": "Punjab Kings",
     "venue": "Bengaluru",
     "time": "19:30",
-    "awayCode": "RCB",
-    "homeCode": "PBKS"
+    "homeCode": "RCB",
+    "awayCode": "PBKS"
   },
   {
     "date": "26-March-2024",
@@ -694,8 +694,8 @@ export const matches = [
     "away": "Gujarat Titans",
     "venue": "Chennai",
     "time": "19:30",
-    "awayCode": "CSK",
-    "homeCode": "GT"
+    "homeCode": "CSK",
+    "awayCode": "GT"
   },
   {
     "date": "27-March-2024",
@@ -703,8 +703,8 @@ export const matches = [
     "away": "Mumbai Indians",
     "venue": "Hyderabad",
     "time": "19:30",
-    "awayCode": "SRH",
-    "homeCode": "MI"
+    "homeCode": "SRH",
+    "awayCode": "MI"
   },
   {
     "date": "28-March-2024",
@@ -712,8 +712,8 @@ export const matches = [
     "away": "Delhi Capitals",
     "venue": "Jaipur",
     "time": "19:30",
-    "awayCode": "RR",
-    "homeCode": "DC"
+    "homeCode": "RR",
+    "awayCode": "DC"
   },
   {
     "date": "29-March-2024",
@@ -721,8 +721,8 @@ export const matches = [
     "away": "Kolkata Knight Riders",
     "venue": "Bengaluru",
     "time": "19:30",
-    "awayCode": "RCB",
-    "homeCode": "KKR"
+    "homeCode": "RCB",
+    "awayCode": "KKR"
   },
   {
     "date": "30-March-2024",
@@ -730,8 +730,8 @@ export const matches = [
     "away": "Punjab Kings",
     "venue": "Lucknow",
     "time": "19:30",
-    "awayCode": "LSG",
-    "homeCode": "PBKS"
+    "homeCode": "LSG",
+    "awayCode": "PBKS"
   },
   {
     "date": "31-March-2024",
@@ -739,8 +739,8 @@ export const matches = [
     "away": "Sunrisers Hyderabad",
     "venue": "Ahmedabad",
     "time": "15:30",
-    "awayCode": "GT",
-    "homeCode": "SRH"
+    "homeCode": "GT",
+    "awayCode": "SRH"
   },
   {
     "date": "31-March-2024",
@@ -748,8 +748,8 @@ export const matches = [
     "away": "Chennai Super Kings",
     "venue": "Visakhapatnam",
     "time": "19:30",
-    "awayCode": "DC",
-    "homeCode": "CSK"
+    "homeCode": "DC",
+    "awayCode": "CSK"
   },
   {
     "date": "1-April-2024",
@@ -757,8 +757,8 @@ export const matches = [
     "away": "Rajasthan Royals",
     "venue": "Mumbai",
     "time": "19:30",
-    "awayCode": "MI",
-    "homeCode": "RR"
+    "homeCode": "MI",
+    "awayCode": "RR"
   },
   {
     "date": "2-April-2024",
@@ -766,8 +766,8 @@ export const matches = [
     "away": "Lucknow Super Giants",
     "venue": "Bengaluru",
     "time": "19:30",
-    "awayCode": "RCB",
-    "homeCode": "LSG"
+    "homeCode": "RCB",
+    "awayCode": "LSG"
   },
   {
     "date": "3-April-2024",
@@ -775,8 +775,8 @@ export const matches = [
     "away": "Kolkata Knight Riders",
     "venue": "Visakhapatnam",
     "time": "19:30",
-    "awayCode": "DC",
-    "homeCode": "KKR"
+    "homeCode": "DC",
+    "awayCode": "KKR"
   },
   {
     "date": "4-April-2024",
@@ -784,8 +784,8 @@ export const matches = [
     "away": "Punjab Kings",
     "venue": "Ahmedabad",
     "time": "19:30",
-    "awayCode": "GT",
-    "homeCode": "PBKS"
+    "homeCode": "GT",
+    "awayCode": "PBKS"
   },
   {
     "date": "5-April-2024",
@@ -793,8 +793,8 @@ export const matches = [
     "away": "Chennai Super Kings",
     "venue": "Hyderabad",
     "time": "19:30",
-    "awayCode": "SRH",
-    "homeCode": "CSK"
+    "homeCode": "SRH",
+    "awayCode": "CSK"
   },
   {
     "date": "6-April-2024",
@@ -802,8 +802,8 @@ export const matches = [
     "away": "Royal Challengers Bangalore",
     "venue": "Jaipur",
     "time": "19:30",
-    "awayCode": "RR",
-    "homeCode": "RCB"
+    "homeCode": "RR",
+    "awayCode": "RCB"
   },
   {
     "date": "7-April-2024",
@@ -811,8 +811,8 @@ export const matches = [
     "away": "Delhi Capitals",
     "venue": "Mumbai",
     "time": "15:30",
-    "awayCode": "MI",
-    "homeCode": "DC"
+    "homeCode": "MI",
+    "awayCode": "DC"
   },
   {
     "date": "7-April-2024",
@@ -820,8 +820,8 @@ export const matches = [
     "away": "Gujarat Titans",
     "venue": "Lucknow",
     "time": "19:30",
-    "awayCode": "LSG",
-    "homeCode": "GT"
+    "homeCode": "LSG",
+    "awayCode": "GT"
   },
   {
     "date": "8-April-2024",
@@ -829,8 +829,8 @@ export const matches = [
     "away": "Kolkata Knight Riders",
     "venue": "Chennai",
     "time": "19:30",
-    "awayCode": "CSK",
-    "homeCode": "KKR"
+    "homeCode": "CSK",
+    "awayCode": "KKR"
   },
   {
     "date": "9-April-2024",
@@ -838,8 +838,8 @@ export const matches = [
     "away": "Sunrisers Hyderabad",
     "venue": "Mohali",
     "time": "19:30",
-    "awayCode": "PBKS",
-    "homeCode": "SRH"
+    "homeCode": "PBKS",
+    "awayCode": "SRH"
   },
   {
     "date": "10-April-2024",
@@ -847,8 +847,8 @@ export const matches = [
     "away": "Gujarat Titans",
     "venue": "Jaipur",
     "time": "19:30",
-    "awayCode": "RR",
-    "homeCode": "GT"
+    "homeCode": "RR",
+    "awayCode": "GT"
   },
   {
     "date": "11-April-2024",
@@ -856,8 +856,8 @@ export const matches = [
     "away": "Royal Challengers Bangalore",
     "venue": "Mumbai",
     "time": "19:30",
-    "awayCode": "MI",
-    "homeCode": "RCB"
+    "homeCode": "MI",
+    "awayCode": "RCB"
   },
   {
     "date": "12-April-2024",
@@ -865,8 +865,8 @@ export const matches = [
     "away": "Delhi Capitals",
     "venue": "Lucknow",
     "time": "19:30",
-    "awayCode": "LSG",
-    "homeCode": "DC"
+    "homeCode": "LSG",
+    "awayCode": "DC"
   },
   {
     "date": "13-April-2024",
@@ -874,8 +874,8 @@ export const matches = [
     "away": "Rajasthan Royals",
     "venue": "Mohali",
     "time": "19:30",
-    "awayCode": "PBKS",
-    "homeCode": "RR"
+    "homeCode": "PBKS",
+    "awayCode": "RR"
   },
   {
     "date": "14-April-2024",
@@ -883,8 +883,8 @@ export const matches = [
     "away": "Lucknow Super Giants",
     "venue": "Kolkata",
     "time": "15:30",
-    "awayCode": "KKR",
-    "homeCode": "LSG"
+    "homeCode": "KKR",
+    "awayCode": "LSG"
   },
   {
     "date": "14-April-2024",
@@ -892,8 +892,8 @@ export const matches = [
     "away": "Chennai Super Kings",
     "venue": "Mumbai",
     "time": "19:30",
-    "awayCode": "MI",
-    "homeCode": "CSK"
+    "homeCode": "MI",
+    "awayCode": "CSK"
   },
   {
     "date": "15-April-2024",
@@ -901,8 +901,8 @@ export const matches = [
     "away": "Sunrisers Hyderabad",
     "venue": "Bengaluru",
     "time": "19:30",
-    "awayCode": "RCB",
-    "homeCode": "SRH"
+    "homeCode": "RCB",
+    "awayCode": "SRH"
   },
   {
     "date": "16-April-2024",
@@ -910,8 +910,8 @@ export const matches = [
     "away": "Rajasthan Royals",
     "venue": "Kolkata",
     "time": "19:30",
-    "awayCode": "KKR",
-    "homeCode": "RR"
+    "homeCode": "KKR",
+    "awayCode": "RR"
   },
   {
     "date": "17-April-2024",
@@ -919,8 +919,8 @@ export const matches = [
     "away": "Delhi Capitals",
     "venue": "Ahmedabad",
     "time": "19:30",
-    "awayCode": "GT",
-    "homeCode": "DC"
+    "homeCode": "GT",
+    "awayCode": "DC"
   },
   {
     "date": "18-April-2024",
@@ -928,8 +928,8 @@ export const matches = [
     "away": "Mumbai Indians",
     "venue": "Mohali",
     "time": "19:30",
-    "awayCode": "PBKS",
-    "homeCode": "MI"
+    "homeCode": "PBKS",
+    "awayCode": "MI"
   },
   {
     "date": "19-April-2024",
@@ -937,8 +937,8 @@ export const matches = [
     "away": "Chennai Super Kings",
     "venue": "Lucknow",
     "time": "19:30",
-    "awayCode": "LSG",
-    "homeCode": "CSK"
+    "homeCode": "LSG",
+    "awayCode": "CSK"
   },
   {
     "date": "20-April-2024",
@@ -946,8 +946,8 @@ export const matches = [
     "away": "Sunrisers Hyderabad",
     "venue": "Visakhapatnam",
     "time": "19:30",
-    "awayCode": "DC",
-    "homeCode": "SRH"
+    "homeCode": "DC",
+    "awayCode": "SRH"
   },
   {
     "date": "21-April-2024",
@@ -955,8 +955,8 @@ export const matches = [
     "away": "Royal Challengers Bangalore",
     "venue": "Kolkata",
     "time": "15:30",
-    "awayCode": "KKR",
-    "homeCode": "RCB"
+    "homeCode": "KKR",
+    "awayCode": "RCB"
   },
   {
     "date": "21-April-2024",
@@ -964,8 +964,8 @@ export const matches = [
     "away": "Gujarat Titans",
     "venue": "Mohali",
     "time": "19:30",
-    "awayCode": "PBKS",
-    "homeCode": "GT"
+    "homeCode": "PBKS",
+    "awayCode": "GT"
   },
   {
     "date": "22-April-2024",
@@ -973,8 +973,8 @@ export const matches = [
     "away": "Mumbai Indians",
     "venue": "Jaipur",
     "time": "19:30",
-    "awayCode": "RR",
-    "homeCode": "MI"
+    "homeCode": "RR",
+    "awayCode": "MI"
   },
   {
     "date": "23-April-2024",
@@ -982,8 +982,8 @@ export const matches = [
     "away": "Lucknow Super Giants",
     "venue": "Chennai",
     "time": "19:30",
-    "awayCode": "CSK",
-    "homeCode": "LSG"
+    "homeCode": "CSK",
+    "awayCode": "LSG"
   },
   {
     "date": "24-April-2024",
@@ -991,8 +991,8 @@ export const matches = [
     "away": "Gujarat Titans",
     "venue": "Delhi",
     "time": "19:30",
-    "awayCode": "DC",
-    "homeCode": "GT"
+    "homeCode": "DC",
+    "awayCode": "GT"
   },
   {
     "date": "25-April-2024",
@@ -1000,8 +1000,8 @@ export const matches = [
     "away": "Royal Challengers Bangalore",
     "venue": "Hyderabad",
     "time": "19:30",
-    "awayCode": "SRH",
-    "homeCode": "RCB"
+    "homeCode": "SRH",
+    "awayCode": "RCB"
   },
   {
     "date": "26-April-2024",
@@ -1009,8 +1009,8 @@ export const matches = [
     "away": "Punjab Kings",
     "venue": "Kolkata",
     "time": "19:30",
-    "awayCode": "KKR",
-    "homeCode": "PBKS"
+    "homeCode": "KKR",
+    "awayCode": "PBKS"
   },
   {
     "date": "27-April-2024",
@@ -1018,8 +1018,8 @@ export const matches = [
     "away": "Mumbai Indians",
     "venue": "Delhi",
     "time": "15:30",
-    "awayCode": "DC",
-    "homeCode": "MI"
+    "homeCode": "DC",
+    "awayCode": "MI"
   },
   {
     "date": "27-April-2024",
@@ -1027,8 +1027,8 @@ export const matches = [
     "away": "Rajasthan Royals",
     "venue": "Lucknow",
     "time": "19:30",
-    "awayCode": "LSG",
-    "homeCode": "RR"
+    "homeCode": "LSG",
+    "awayCode": "RR"
   },
   {
     "date": "28-April-2024",
@@ -1036,8 +1036,8 @@ export const matches = [
     "away": "Royal Challengers Bangalore",
     "venue": "Ahmedabad",
     "time": "15:30",
-    "awayCode": "GT",
-    "homeCode": "RCB"
+    "homeCode": "GT",
+    "awayCode": "RCB"
   },
   {
     "date": "28-April-2024",
@@ -1045,8 +1045,8 @@ export const matches = [
     "away": "Sunrisers Hyderabad",
     "venue": "Chennai",
     "time": "19:30",
-    "awayCode": "CSK",
-    "homeCode": "SRH"
+    "homeCode": "CSK",
+    "awayCode": "SRH"
   },
   {
     "date": "29-April-2024",
@@ -1054,8 +1054,8 @@ export const matches = [
     "away": "Delhi Capitals",
     "venue": "Kolkata",
     "time": "19:30",
-    "awayCode": "KKR",
-    "homeCode": "DC"
+    "homeCode": "KKR",
+    "awayCode": "DC"
   },
   {
     "date": "30-April-2024",
@@ -1063,8 +1063,8 @@ export const matches = [
     "away": "Mumbai Indians",
     "venue": "Lucknow",
     "time": "19:30",
-    "awayCode": "LSG",
-    "homeCode": "MI"
+    "homeCode": "LSG",
+    "awayCode": "MI"
   },
   {
     "date": "1-May-2024",
@@ -1072,8 +1072,8 @@ export const matches = [
     "away": "Punjab Kings",
     "venue": "Chennai",
     "time": "19:30",
-    "awayCode": "CSK",
-    "homeCode": "PBKS"
+    "homeCode": "CSK",
+    "awayCode": "PBKS"
   },
   {
     "date": "2-May-2024",
@@ -1081,8 +1081,8 @@ export const matches = [
     "away": "Rajasthan Royals",
     "venue": "Hyderabad",
     "time": "19:30",
-    "awayCode": "SRH",
-    "homeCode": "RR"
+    "homeCode": "SRH",
+    "awayCode": "RR"
   },
   {
     "date": "3-May-2024",
@@ -1090,8 +1090,8 @@ export const matches = [
     "away": "Kolkata Knight Riders",
     "venue": "Mumbai",
     "time": "19:30",
-    "awayCode": "MI",
-    "homeCode": "KKR"
+    "homeCode": "MI",
+    "awayCode": "KKR"
   },
   {
     "date": "4-May-2024",
@@ -1099,8 +1099,8 @@ export const matches = [
     "away": "Gujarat Titans",
     "venue": "Bengaluru",
     "time": "19:30",
-    "awayCode": "RCB",
-    "homeCode": "GT"
+    "homeCode": "RCB",
+    "awayCode": "GT"
   },
   {
     "date": "5-May-2024",
@@ -1108,8 +1108,8 @@ export const matches = [
     "away": "Chennai Super Kings",
     "venue": "Mohali",
     "time": "15:30",
-    "awayCode": "PBKS",
-    "homeCode": "CSK"
+    "homeCode": "PBKS",
+    "awayCode": "CSK"
   },
   {
     "date": "5-May-2024",
@@ -1117,8 +1117,8 @@ export const matches = [
     "away": "Kolkata Knight Riders",
     "venue": "Lucknow",
     "time": "19:30",
-    "awayCode": "LSG",
-    "homeCode": "KKR"
+    "homeCode": "LSG",
+    "awayCode": "KKR"
   },
   {
     "date": "6-May-2024",
@@ -1126,8 +1126,8 @@ export const matches = [
     "away": "Sunrisers Hyderabad",
     "venue": "Mumbai",
     "time": "19:30",
-    "awayCode": "MI",
-    "homeCode": "SRH"
+    "homeCode": "MI",
+    "awayCode": "SRH"
   },
   {
     "date": "7-May-2024",
@@ -1135,8 +1135,8 @@ export const matches = [
     "away": "Rajasthan Royals",
     "venue": "Delhi",
     "time": "19:30",
-    "awayCode": "DC",
-    "homeCode": "RR"
+    "homeCode": "DC",
+    "awayCode": "RR"
   },
   {
     "date": "8-May-2024",
@@ -1144,8 +1144,8 @@ export const matches = [
     "away": "Lucknow Super Giants",
     "venue": "Hyderabad",
     "time": "19:30",
-    "awayCode": "SRH",
-    "homeCode": "LSG"
+    "homeCode": "SRH",
+    "awayCode": "LSG"
   },
   {
     "date": "9-May-2024",
@@ -1153,8 +1153,8 @@ export const matches = [
     "away": "Royal Challengers Bangalore",
     "venue": "Mohali",
     "time": "19:30",
-    "awayCode": "PBKS",
-    "homeCode": "RCB"
+    "homeCode": "PBKS",
+    "awayCode": "RCB"
   },
   {
     "date": "10-May-2024",
@@ -1162,8 +1162,8 @@ export const matches = [
     "away": "Chennai Super Kings",
     "venue": "Ahmedabad",
     "time": "19:30",
-    "awayCode": "GT",
-    "homeCode": "CSK"
+    "homeCode": "GT",
+    "awayCode": "CSK"
   },
   {
     "date": "11-May-2024",
@@ -1171,8 +1171,8 @@ export const matches = [
     "away": "Mumbai Indians",
     "venue": "Kolkata",
     "time": "19:30",
-    "awayCode": "KKR",
-    "homeCode": "MI"
+    "homeCode": "KKR",
+    "awayCode": "MI"
   },
   {
     "date": "12-May-2024",
@@ -1180,8 +1180,8 @@ export const matches = [
     "away": "Rajasthan Royals",
     "venue": "Chennai",
     "time": "15:30",
-    "awayCode": "CSK",
-    "homeCode": "RR"
+    "homeCode": "CSK",
+    "awayCode": "RR"
   },
   {
     "date": "12-May-2024",
@@ -1189,8 +1189,8 @@ export const matches = [
     "away": "Delhi Capitals",
     "venue": "Bengaluru",
     "time": "19:30",
-    "awayCode": "RCB",
-    "homeCode": "DC"
+    "homeCode": "RCB",
+    "awayCode": "DC"
   },
   {
     "date": "13-May-2024",
@@ -1198,8 +1198,8 @@ export const matches = [
     "away": "Kolkata Knight Riders",
     "venue": "Ahmedabad",
     "time": "19:30",
-    "awayCode": "GT",
-    "homeCode": "KKR"
+    "homeCode": "GT",
+    "awayCode": "KKR"
   },
   {
     "date": "14-May-2024",
@@ -1207,8 +1207,8 @@ export const matches = [
     "away": "Lucknow Super Giants",
     "venue": "Delhi",
     "time": "19:30",
-    "awayCode": "DC",
-    "homeCode": "LSG"
+    "homeCode": "DC",
+    "awayCode": "LSG"
   },
   {
     "date": "15-May-2024",
@@ -1216,8 +1216,8 @@ export const matches = [
     "away": "Punjab Kings",
     "venue": "Jaipur",
     "time": "19:30",
-    "awayCode": "RR",
-    "homeCode": "PBKS"
+    "homeCode": "RR",
+    "awayCode": "PBKS"
   },
   {
     "date": "16-May-2024",
@@ -1225,8 +1225,8 @@ export const matches = [
     "away": "Gujarat Titans",
     "venue": "Hyderabad",
     "time": "19:30",
-    "awayCode": "SRH",
-    "homeCode": "GT"
+    "homeCode": "SRH",
+    "awayCode": "GT"
   },
   {
     "date": "17-May-2024",
@@ -1234,8 +1234,8 @@ export const matches = [
     "away": "Lucknow Super Giants",
     "venue": "Mumbai",
     "time": "19:30",
-    "awayCode": "MI",
-    "homeCode": "LSG"
+    "homeCode": "MI",
+    "awayCode": "LSG"
   },
   {
     "date": "18-May-2024",
@@ -1243,8 +1243,8 @@ export const matches = [
     "away": "Chennai Super Kings",
     "venue": "Bengaluru",
     "time": "19:30",
-    "awayCode": "RCB",
-    "homeCode": "CSK"
+    "homeCode": "RCB",
+    "awayCode": "CSK"
   },
   {
     "date": "19-May-2024",
@@ -1252,8 +1252,8 @@ export const matches = [
     "away": "Punjab Kings",
     "venue": "Hyderabad",
     "time": "15:30",
-    "awayCode": "SRH",
-    "homeCode": "PBKS"
+    "homeCode": "SRH",
+    "awayCode": "PBKS"
   },
   {
     "date": "19-May-2024",
@@ -1261,7 +1261,7 @@ export const matches = [
     "away": "Kolkata Knight Riders",
     "venue": "Jaipur",
     "time": "19:30",
-    "awayCode": "RR",
-    "homeCode": "KKR"
+    "homeCode": "RR",
+    "awayCode": "KKR"
   }
  ]
