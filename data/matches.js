@@ -1263,5 +1263,23 @@ export const matches = [
     "time": "19:30",
     "homeCode": "RR",
     "awayCode": "KKR"
+  },
+  {
+    "date": "21-May-2024",
+    "home": "Kolkata Knight Riders",
+    "away": "Sunrisers Hyderabad",
+    "venue": "Ahmedabad",
+    "time": "19:30",
+    "homeCode": "KKR",
+    "awayCode": "SRH"
+  },
+  {
+    "date": "22-May-2024",
+    "home": "Rajasthan Royals",
+    "away": "Royal Challengers Bangalore",
+    "venue": "Ahmedabad",
+    "time": "19:30",
+    "homeCode": "RR",
+    "awayCode": "RCB"
   }
  ]
