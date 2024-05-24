@@ -1281,5 +1281,14 @@ export const matches = [
     "time": "19:30",
     "homeCode": "RR",
     "awayCode": "RCB"
+  },
+  {
+    "date": "24-May-2024",
+    "home": "Rajasthan Royals",
+    "away": "Sunrisers Hyderabad",
+    "venue": "Chennai",
+    "time": "19:30",
+    "homeCode": "RR",
+    "awayCode": "SRH"
   }
  ]
