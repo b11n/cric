@@ -1283,6 +1283,15 @@ export const matches = [
     "awayCode": "RCB"
   },
   {
+    "date": "26-May-2024",
+    "home": "Kolkata Knight Riders",
+    "away": "Sunrisers Hyderabad",
+    "venue": "Chennai",
+    "time": "19:30",
+    "homeCode": "KKR",
+    "awayCode": "SRH"
+  },
+  {
     "date": "24-May-2024",
     "home": "Rajasthan Royals",
     "away": "Sunrisers Hyderabad",
